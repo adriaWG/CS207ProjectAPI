@@ -37,6 +37,9 @@ https://developers.google.com/drive/api/guides/about-sdk
 ddownload API:
 https://ddownload.com/api
 
+spelling check API:
+https://github.com/languagetool-org/languagetool
+
 ## Screenshot of using a tool to try out API:
 ![Alt text](image.png)
 ## Example out put of running your Java code:
@@ -51,8 +54,14 @@ https://ddownload.com/api
 2. ddowload provides the apis on their website which provides us some ideas of how to structure our cloud drive.
 ![img_1.png](img_1.png)
 ![img.png](img.png)
+## Example of spelling correction attempts
+![img_4.png](img_4.png)
+* this shows the supporting app maven it needs (however i met some problems with that because I can't find the path variable)
+![img_3.png](img_3.png)
+* this shows the total API given (too big, so I didn't attach files to our current project)
 
 ## A list of any technical problems blocking progress (if any):
 1.Tried to get the access_token of onenote following some steps searched on the Internet, but stuck here because of limited time and authority.
 ![Alt text](image-1.png)
 2.Some environment setting problems
+(1) as listed in "Example of spelling correction attempts" with maven settings;
