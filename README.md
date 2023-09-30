@@ -31,6 +31,12 @@ Google Docs API:
 https://developers.google.com/docs/api
 Microsoft OneNote API:
 https://dev.onenote.com/docs
+
+google drive API:
+https://developers.google.com/drive/api/guides/about-sdk
+ddownload API:
+https://ddownload.com/api
+
 ## Screenshot of using a tool to try out API:
 ![Alt text](image.png)
 ## Example out put of running your Java code:
@@ -39,6 +45,13 @@ https://dev.onenote.com/docs
  *(Prerequisites are for a limited time this week)*
  1.use maven or gradle to include the SDK to the project 
  2.sign up for the APIKey correctly
+## Another example of tryin to use the cloud drive API
+1. google-drive provides a platform on which we can upload our files.
+![img_2.png](img_2.png)
+2. ddowload provides the apis on their website which provides us some ideas of how to structure our cloud drive.
+![img_1.png](img_1.png)
+![img.png](img.png)
+
 ## A list of any technical problems blocking progress (if any):
 1.Tried to get the access_token of onenote following some steps searched on the Internet, but stuck here because of limited time and authority.
 ![Alt text](image-1.png)
