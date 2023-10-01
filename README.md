@@ -66,7 +66,10 @@ Here are some of our findings:
 ![img.png](img.png)
 ### Example of Spelling-Correction Attempts-
 ![img_4.png](img_4.png)
+![img_5.png](img_5.png)
 * This shows that the supporting package (Maven) will be needed, and should be added to the environment. 
+![img_6.png](img_6.png)
+* This shows our attempt to add jdk manually to the project, however, we are not sure how to fill these blanks
 ![img_3.png](img_3.png)
 * This shows the total API given
 
