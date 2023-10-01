@@ -1,4 +1,7 @@
 # CS207 Project API
+Group 13 - TUT0101 - BA3175
+
+Team Members: Agnes Yau, Emily Tieu, Nanxin Wang, Yuhan Jin
 
 ## Problem Domain:
 ### Note-Taking Application
@@ -54,12 +57,6 @@ https://github.com/languagetool-org/languagetool
 ## Example Output of Running our Java Code:
 We attempted the API of Evernote and Outlook, however we encountered few problems during our attempts. 
 
- Problems:
-*(This will be further explained below.)*
-1. use maven or gradle to include the SDK to the project 
-2. sign up for the APIKey correctly
-3. Time Limit
-
 ### Example of using Drive API-
 Here are some of our findings:
 1. Google Drive provides a platform on which we can upload our files.
@@ -69,13 +66,16 @@ Here are some of our findings:
 ![img.png](img.png)
 ### Example of Spelling-Correction Attempts-
 ![img_4.png](img_4.png)
-* this shows the supporting app maven it needs (however i met some problems with that because I can't find the path variable)
+* This shows that the supporting package (Maven) will be needed, and should be added to the environment. 
 ![img_3.png](img_3.png)
-* this shows the total API given (too big, so I didn't attach files to our current project)
+* This shows the total API given
 
 ## A list of any technical problems blocking progress:
-1. Tried to get the access_token of onenote following some steps searched on the Internet, but stuck here because of limited time and authority.
+1. Limited Authority and Time:
+
+We tried to get the access_token from OneNote, however we are not authorised to use it. 
 ![Alt text](image-1.png)
-2. Some environment setting problems
-(1) as listed in "Example of spelling correction attempts" with maven settings;
-3. Time Limit
+We believe that with more time, we will be able to find a solution to this problem.
+2. Problems with Environment Settings: This is documented under "Example of spelling-correction attempts".
+At the moment, we are not able to add Maven as a package as the built-in IntelliJ Java jdk does not provide this environment path.
+
