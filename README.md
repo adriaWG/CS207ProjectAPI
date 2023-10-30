@@ -1,7 +1,7 @@
 # CS207 Project API
 Group 13 - TUT0101 - BA3175
 
-Team Members: Agnes Yau, Emily Tieu, Nanxin Wang, Yuhan Jin
+Team Members: Agnes Yau, Emily Tieu, Nanxin Wang, Yunhan Jin
 
 ## Problem Domain:
 ### Note-Taking Application
