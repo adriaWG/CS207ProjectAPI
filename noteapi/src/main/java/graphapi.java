@@ -5,6 +5,9 @@ import java.net.URL;
 
     public class graphapi {
         public static void main(String[] args) {
+
+
+            
             try {
                 // 定义 Graph API 终结点 URL
                 String graphApiUrl = "https://graph.microsoft.com/User.Read"; // 这是一个示例，获取当前用户信息

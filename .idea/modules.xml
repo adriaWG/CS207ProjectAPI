@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CS207ProjectAPI.iml" filepath="$PROJECT_DIR$/.idea/CS207ProjectAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/outline/outline.iml" filepath="$PROJECT_DIR$/outline/outline.iml" />
     </modules>
   </component>
 </project>
