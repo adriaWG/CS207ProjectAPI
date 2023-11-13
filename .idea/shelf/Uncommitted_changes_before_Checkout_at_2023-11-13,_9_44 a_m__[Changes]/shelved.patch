@@ -1,0 +1,135 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project version=\"4\">\n  <component name=\"ProjectRootManager\">\n    <output url=\"file://$PROJECT_DIR$/out\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 54099f73954052af5e50b0335e57aad026d13183)
++++ b/.idea/misc.xml	(date 1699835597913)
+@@ -1,5 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager">
++  <component name="ProjectRootManager" version="2" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"3e26ea3e-5754-4816-bc9d-3f953f3e2f29\" name=\"Changes\" comment=\"spelling mistake in README.md\">\n      <change afterPath=\"$PROJECT_DIR$/outline/outline.iml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/app/Main.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/app/OpenNoteUseCaseFactory.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/data_access/FileUserDataAccessObject.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/data_access/InMemoryUserDataAccessObject.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/entity/CommonNote.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/entity/CommonNoteFactory.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/entity/Note.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/entity/NoteFactory.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/interface_adapter/EditNoteController.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/interface_adapter/EditNotePresenter.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/interface_adapter/EditNoteState.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/interface_adapter/EditNoteViewModel.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/interface_adapter/OpenNoteState.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/interface_adapter/OpenNoteViewModel.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/interface_adapter/ViewManagerModel.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/interface_adapter/ViewModel.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/use_case/OpenNoteInputBoundary.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/use_case/OpenNoteInputData.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/use_case/OpenNoteOutputBoundary.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/outline/src/use_case/OpenNoteOutputData.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/modules.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/modules.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/noteapi/src/main/java/graphapi.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/noteapi/src/main/java/graphapi.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Interface\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n    <option name=\"UPDATE_TYPE\" value=\"REBASE\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 0\n}</component>\n  <component name=\"ProjectId\" id=\"2W5LOmzIFuOmNfDGUPozsfU621O\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"git-widget-placeholder\": \"main\",\n    \"jdk.selected.JAVA_MODULE\": \"1.8\",\n    \"last_opened_file_path\": \"C:/Users/ASUS/IdeaProjects/yauyik/CS207ProjectAPI\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"onboarding.tips.debug.path\": \"E:/Codes/software design/Project/noteapi/src/main/java/graphapi.java\",\n    \"project.structure.last.edited\": \"Modules\",\n    \"project.structure.proportion\": \"0.15\",\n    \"project.structure.side.proportion\": \"0.2\",\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"3e26ea3e-5754-4816-bc9d-3f953f3e2f29\" name=\"Changes\" comment=\"\" />\n      <created>1696017464922</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1696017464922</updated>\n      <workItem from=\"1696017466916\" duration=\"8000\" />\n      <workItem from=\"1696117364191\" duration=\"2990000\" />\n      <workItem from=\"1696127492982\" duration=\"1026000\" />\n      <workItem from=\"1698672660370\" duration=\"605000\" />\n      <workItem from=\"1699427555609\" duration=\"459000\" />\n      <workItem from=\"1699509181081\" duration=\"1741000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"add folders\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1698673062734</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1698673062734</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"spelling mistake in README.md\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1698673148883</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1698673148883</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"add folders\" />\n    <MESSAGE value=\"spelling mistake in README.md\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"spelling mistake in README.md\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/noteapi/src/main/java/graphapi.java</url>\n          <line>44</line>\n          <option name=\"timeStamp\" value=\"1\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 54099f73954052af5e50b0335e57aad026d13183)
++++ b/.idea/workspace.xml	(date 1699886640808)
+@@ -5,45 +5,14 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="spelling mistake in README.md">
+-      <change afterPath="$PROJECT_DIR$/outline/outline.iml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/app/Main.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/app/OpenNoteUseCaseFactory.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/data_access/FileUserDataAccessObject.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/data_access/InMemoryUserDataAccessObject.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/entity/CommonNote.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/entity/CommonNoteFactory.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/entity/Note.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/entity/NoteFactory.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/interface_adapter/EditNoteController.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/interface_adapter/EditNotePresenter.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/interface_adapter/EditNoteState.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/interface_adapter/EditNoteViewModel.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/interface_adapter/OpenNoteState.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/interface_adapter/OpenNoteViewModel.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/interface_adapter/ViewManagerModel.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/interface_adapter/ViewModel.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/use_case/OpenNoteInputBoundary.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/use_case/OpenNoteInputData.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/use_case/OpenNoteOutputBoundary.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/outline/src/use_case/OpenNoteOutputData.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/noteapi/src/main/java/graphapi.java" beforeDir="false" afterPath="$PROJECT_DIR$/noteapi/src/main/java/graphapi.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="Interface" />
+-        <option value="Class" />
+-      </list>
+-    </option>
+-  </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+     <option name="UPDATE_TYPE" value="REBASE" />
+@@ -55,9 +24,7 @@
+   &quot;associatedIndex&quot;: 0
+ }</component>
+   <component name="ProjectId" id="2W5LOmzIFuOmNfDGUPozsfU621O" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+-    <ConfirmationsSetting value="2" id="Add" />
+-  </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -66,20 +33,14 @@
+   "keyToString": {
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+     "WebServerToolWindowFactoryState": "false",
+     "git-widget-placeholder": "main",
+-    "jdk.selected.JAVA_MODULE": "1.8",
+     "last_opened_file_path": "C:/Users/ASUS/IdeaProjects/yauyik/CS207ProjectAPI",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.tslint": "true",
+     "node.js.selected.package.eslint": "(autodetect)",
+     "node.js.selected.package.tslint": "(autodetect)",
+     "nodejs_package_manager_path": "npm",
+-    "onboarding.tips.debug.path": "E:/Codes/software design/Project/noteapi/src/main/java/graphapi.java",
+-    "project.structure.last.edited": "Modules",
+-    "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.2",
+     "settings.editor.selected.configurable": "preferences.pluginManager",
+     "vue.rearranger.settings.migration": "true"
+   }
+@@ -96,8 +57,7 @@
+       <workItem from="1696117364191" duration="2990000" />
+       <workItem from="1696127492982" duration="1026000" />
+       <workItem from="1698672660370" duration="605000" />
+-      <workItem from="1699427555609" duration="459000" />
+-      <workItem from="1699509181081" duration="1741000" />
++      <workItem from="1699835581217" duration="1061000" />
+     </task>
+     <task id="LOCAL-00001" summary="add folders">
+       <option name="closed" value="true" />
+@@ -136,17 +96,6 @@
+     <MESSAGE value="add folders" />
+     <MESSAGE value="spelling mistake in README.md" />
+     <option name="LAST_COMMIT_MESSAGE" value="spelling mistake in README.md" />
+-  </component>
+-  <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/noteapi/src/main/java/graphapi.java</url>
+-          <line>44</line>
+-          <option name="timeStamp" value="1" />
+-        </line-breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />
