@@ -1,7 +1,7 @@
 # CS207 Project API
 Group 13 - TUT0101 - BA3175
 
-Team Members: Agnes Yau, Emily Tieu, Nanxin Wang, Yuhan Jin
+Team Members: Agnes Yau, Emily Tieu, Nanxin Wang, Yunhan Jin
 
 ## Problem Domain:
 ### Note-Taking Application
@@ -52,7 +52,7 @@ spelling check API:
 https://github.com/languagetool-org/languagetool
 
 ## Screenshot of Trying Out API:
-![Alt text](image.png)
+![Alt text](graph/image.png)
 
 ## Example Output of Running our Java Code:
 We attempted the API of Evernote and Outlook, however we encountered few problems during our attempts. 
@@ -60,21 +60,24 @@ We attempted the API of Evernote and Outlook, however we encountered few problem
 ### Example of using Drive API-
 Here are some of our findings:
 1. Google Drive provides a platform on which we can upload our files.
-![img_2.png](img_2.png) 
+![img_2.png](graph/img_2.png) 
 2. ddowload provides the API on their website which provides us some ideas on how to structure our cloud drive.
-![img_1.png](img_1.png)
-![img.png](img.png)
+![img_1.png](graph/img_1.png)
+![img.png](graph/img.png)
 ### Example of Spelling-Correction Attempts-
-![img_4.png](img_4.png)
+![img_4.png](graph/img_4.png)
+![img_5.png](graph/img_5.png)
 * This shows that the supporting package (Maven) will be needed, and should be added to the environment. 
-![img_3.png](img_3.png)
+![img_6.png](graph/img_6.png)
+* This shows our attempt to add jdk manually to the project, however, we are not sure how to fill these blanks
+![img_3.png](graph/img_3.png)
 * This shows the total API given
 
 ## A list of any technical problems blocking progress:
 1. Limited Authority and Time:
 
 We tried to get the access_token from OneNote, however we are not authorised to use it. 
-![Alt text](image-1.png)
+![Alt text](graph/image-1.png)
 We believe that with more time, we will be able to find a solution to this problem.
 2. Problems with Environment Settings: This is documented under "Example of spelling-correction attempts".
 At the moment, we are not able to add Maven as a package as the built-in IntelliJ Java jdk does not provide this environment path.
