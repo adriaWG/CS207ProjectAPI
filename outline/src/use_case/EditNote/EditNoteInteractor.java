@@ -7,7 +7,7 @@ public class EditNoteInteractor implements EditNoteInputBoundary {
     final EditNoteInputBoundary editNotePresenter;
 
     public EditNoteInteractor(EditNoteUserDataAccessInterface userDataAccessInterface,
-                           EditNoteOutputBoundary editNoteOutputBoundary) {
+                              EditNoteOutputBoundary editNoteOutputBoundary) {
         this.userDataAccessObject = userDataAccessInterface;
         //and others that might be in edit note
     }
@@ -17,5 +17,3 @@ public class EditNoteInteractor implements EditNoteInputBoundary {
 
     }
 }
-
-
