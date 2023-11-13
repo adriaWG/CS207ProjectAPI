@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="created directories specifying use cases">
-      <change afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInputBoundary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInputData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInteractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteOutputBoundary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteOutputData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outline/src/use_case/EditNote/EditNoteInteractor.java" afterDir="false" />
+    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="spelling mistake in README.md">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/src/interface_adapter/OpenNoteState.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/interface_adapter/OpenNoteState.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +30,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="Emily" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -80,12 +69,6 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/outline/src/use_case/OpenNote" />
-      <recent name="$PROJECT_DIR$/outline/src/use_case/EditNote" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -100,10 +83,6 @@
       <workItem from="1698672660370" duration="605000" />
       <workItem from="1699427555609" duration="459000" />
       <workItem from="1699509181081" duration="1741000" />
-      <workItem from="1699887195148" duration="39000" />
-      <workItem from="1699887273541" duration="124000" />
-      <workItem from="1699887468519" duration="440000" />
-      <workItem from="1699888861100" duration="1065000" />
     </task>
     <task id="LOCAL-00001" summary="add folders">
       <option name="closed" value="true" />
@@ -121,15 +100,7 @@
       <option name="project" value="LOCAL" />
       <updated>1698673148883</updated>
     </task>
-    <task id="LOCAL-00003" summary="created directories specifying use cases">
-      <option name="closed" value="true" />
-      <created>1699888461168</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1699888461168</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,19 +111,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="Emily" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -162,6 +121,17 @@
     <MESSAGE value="add folders" />
     <MESSAGE value="spelling mistake in README.md" />
     <option name="LAST_COMMIT_MESSAGE" value="spelling mistake in README.md" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/noteapi/src/main/java/graphapi.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
