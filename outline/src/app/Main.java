@@ -3,6 +3,7 @@ package app;
 import data_access.FileUserDataAccessObject;
 import interface_adapter.EditNote_adapter.EditNoteViewModel;
 import interface_adapter.OpenNote_adapter.OpenNoteViewModel;
+import interface_adapter.ViewManagerModel;
 import view.EditNoteView;
 import view.OpenNoteView;
 import view.ViewManager;
