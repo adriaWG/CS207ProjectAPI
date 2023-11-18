@@ -3,16 +3,17 @@ package use_case.EditNote_case;
 public class EditNoteInteractor implements EditNoteInputBoundary {
 
     final EditNoteUserDataAccessInterface userDataAccessObject;
-    final EditNoteInputBoundary editNotePresenter;
+    final EditNoteOutputBoundary editNotePresenter;
 
     public EditNoteInteractor(EditNoteUserDataAccessInterface userDataAccessInterface,
                               EditNoteOutputBoundary editNoteOutputBoundary) {
         this.userDataAccessObject = userDataAccessInterface;
-        //and others that might be in edit note
+        this.editNotePresenter = editNoteOutputBoundary;
     }
 
     @Override //some kind of execute that deal with editNote InputData
-    public void execute(EditNoteInputData editNoteInputData) {
-
+    public void edit(EditNoteInputData editNoteInputData) {
+        String filename = editNoteInputData.getFilename();
+        //TODO: edit 2. add API for editNote
     }
 }
