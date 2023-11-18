@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="created directories specifying use cases">
-      <change afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInputBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInputBoundary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInteractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteOutputBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteOutputBoundary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteOutputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteOutputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteUserDataAccessInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteUserDataAccessInterface.java" afterDir="false" />
+    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="deleted not useful files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/src/app/OpenNoteUseCaseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/app/OpenNoteUseCaseFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/src/interface_adapter/OpenNote_adapter/OpenNoteViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/interface_adapter/OpenNote_adapter/OpenNoteViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/src/view/OpenNoteView.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/view/OpenNoteView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,26 +18,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="Git.Pull.Settings">
-    <option name="OPTIONS">
-      <set>
-        <option value="REBASE" />
-      </set>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -57,34 +41,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Emily",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/ASUS/IdeaProjects/yauyik/CS207ProjectAPI",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "E:/Codes/software design/Project/noteapi/src/main/java/graphapi.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/IdeaProjects/yauyik/CS207ProjectAPI&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;E:/Codes/software design/Project/noteapi/src/main/java/graphapi.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/outline/src/use_case/OpenNote" />
-      <recent name="$PROJECT_DIR$/outline/src/use_case/EditNote" />
-    </key>
-  </component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -99,10 +77,6 @@
       <workItem from="1698672660370" duration="605000" />
       <workItem from="1699427555609" duration="459000" />
       <workItem from="1699509181081" duration="1741000" />
-      <workItem from="1699887195148" duration="39000" />
-      <workItem from="1699887273541" duration="124000" />
-      <workItem from="1699887468519" duration="440000" />
-      <workItem from="1699888861100" duration="1065000" />
     </task>
     <task id="LOCAL-00001" summary="add folders">
       <option name="closed" value="true" />
@@ -120,15 +94,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698673148883</updated>
     </task>
-    <task id="LOCAL-00003" summary="created directories specifying use cases">
+    <task id="LOCAL-00003" summary="deleted not useful folders">
       <option name="closed" value="true" />
-      <created>1699888461168</created>
+      <created>1700342559755</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1699888461168</updated>
+      <updated>1700342559755</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="deleted not useful files">
+      <option name="closed" value="true" />
+      <created>1700342907700</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700342907700</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,19 +121,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="Emily" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -160,7 +130,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add folders" />
     <MESSAGE value="spelling mistake in README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="spelling mistake in README.md" />
+    <MESSAGE value="deleted not useful folders" />
+    <MESSAGE value="deleted not useful files" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted not useful files" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/noteapi/src/main/java/graphapi.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

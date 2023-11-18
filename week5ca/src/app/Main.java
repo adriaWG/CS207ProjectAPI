@@ -1,10 +1,17 @@
 package app;
 
 import data_access.FileUserDataAccessObject;
-import interface_adapter.EditNote_adapter.EditNoteViewModel;
-import interface_adapter.OpenNote_adapter.OpenNoteViewModel;
-import view.EditNoteView;
-import view.OpenNoteView;
+import entity.CommonUserFactory;
+import interface_adapter.clear_users.ClearViewModel;
+import interface_adapter.login.LoginViewModel;
+import interface_adapter.logged_in.LoggedInViewModel;
+import interface_adapter.signup.SignupViewModel;
+import interface_adapter.ViewManagerModel;
+import use_case.clear_users.ClearUserDataAccessInterface;
+import use_case.login.LoginUserDataAccessInterface;
+import view.LoggedInView;
+import view.LoginView;
+import view.SignupView;
 import view.ViewManager;
 
 import javax.swing.*;
@@ -17,7 +24,7 @@ public class Main {
         // various cards, and the layout, and stitch them together.
 
         // The main application window.
-        JFrame application = new JFrame("Notes");
+        JFrame application = new JFrame("Login Example");
         application.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         CardLayout cardLayout = new CardLayout();
@@ -34,12 +41,13 @@ public class Main {
         // This information will be changed by a presenter object that is reporting the
         // results from the use case. The ViewModels are observable, and will
         // be observed by the Views.
-        EditNoteViewModel loginViewModel = new EditNoteViewModel();
-        OpenNoteViewModel loggedInViewModel = new OpenNoteViewModel();
+        LoginViewModel loginViewModel = new LoginViewModel();
+        LoggedInViewModel loggedInViewModel = new LoggedInViewModel();
+        SignupViewModel signupViewModel = new SignupViewModel();
+        ClearViewModel clearViewModel = new ClearViewModel();
 
         FileUserDataAccessObject userDataAccessObject;
         FileUserDataAccessObject userDataAccessObject1;
-
         try {
             userDataAccessObject = new FileUserDataAccessObject("./users.csv", new CommonUserFactory());
             userDataAccessObject1=userDataAccessObject;
@@ -47,17 +55,19 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        EditNoteView editNoteView = EditNoteUseCaseFactory.create(viewManagerModel, clearViewModel, loginViewModel, signupViewModel, userDataAccessObject,userDataAccessObject1);
-        views.add(editNoteView, editNoteView.viewName);
+        SignupView signupView = SignupUseCaseFactory.create(viewManagerModel, clearViewModel, loginViewModel, signupViewModel, userDataAccessObject,userDataAccessObject1);
+        views.add(signupView, signupView.viewName);
 
-        OpenNoteView openNoteView = OpenNoteUseCaseFactory.create(viewManagerModel, loginViewModel, loggedInViewModel, userDataAccessObject);
-        views.add(openNoteView, openNoteView.viewName);
+        LoginView loginView = LoginUseCaseFactory.create(viewManagerModel, loginViewModel, loggedInViewModel, userDataAccessObject);
+        views.add(loginView, loginView.viewName);
 
-        viewManagerModel.setActiveView(XXXView.viewName);
+        LoggedInView loggedInView = new LoggedInView(loggedInViewModel);
+        views.add(loggedInView, loggedInView.viewName);
+
+        viewManagerModel.setActiveView(signupView.viewName);
         viewManagerModel.firePropertyChanged();
 
         application.pack();
         application.setVisible(true);
     }
 }
-
