@@ -4,6 +4,7 @@ public class OpenNoteOutputData {
     private String noteId;
     private String message;
 
+    private boolean useCaseFailed;
     public OpenNoteOutputData(String noteId, String message){
         this.noteId = noteId;
         this.message = message;
