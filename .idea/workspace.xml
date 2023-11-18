@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="deleted not useful files">
+    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="OpenNoteViewModel.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outline/src/app/OpenNoteUseCaseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/app/OpenNoteUseCaseFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/interface_adapter/OpenNote_adapter/OpenNoteViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/interface_adapter/OpenNote_adapter/OpenNoteViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/view/OpenNoteView.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/view/OpenNoteView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/src/interface_adapter/OpenNote_adapter/OpenNotePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/interface_adapter/OpenNote_adapter/OpenNotePresenter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +24,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -110,7 +108,47 @@
       <option name="project" value="LOCAL" />
       <updated>1700342907700</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implemented OpenNoteView.java">
+      <option name="closed" value="true" />
+      <created>1700345057762</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700345057762</updated>
+    </task>
+    <task id="LOCAL-00006" summary="implemented OpenNoteViewModel.java">
+      <option name="closed" value="true" />
+      <created>1700345371187</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700345371188</updated>
+    </task>
+    <task id="LOCAL-00007" summary="created OpenNoteController.java for interface adapter">
+      <option name="closed" value="true" />
+      <created>1700346428495</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700346428495</updated>
+    </task>
+    <task id="LOCAL-00008" summary="created OpenNotePresenter.java for interface adapter">
+      <option name="closed" value="true" />
+      <created>1700346463831</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700346463831</updated>
+    </task>
+    <task id="LOCAL-00009" summary="OpenNoteViewModel.java">
+      <option name="closed" value="true" />
+      <created>1700348238605</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700348238605</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +170,12 @@
     <MESSAGE value="spelling mistake in README.md" />
     <MESSAGE value="deleted not useful folders" />
     <MESSAGE value="deleted not useful files" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted not useful files" />
+    <MESSAGE value="implemented OpenNoteView.java" />
+    <MESSAGE value="implemented OpenNoteViewModel.java" />
+    <MESSAGE value="created OpenNoteController.java for interface adapter" />
+    <MESSAGE value="created OpenNotePresenter.java for interface adapter" />
+    <MESSAGE value="OpenNoteViewModel.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="OpenNoteViewModel.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
