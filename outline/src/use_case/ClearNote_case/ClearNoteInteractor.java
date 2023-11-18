@@ -1,19 +1,18 @@
 package use_case.ClearNote_case;
 
 public class ClearNoteInteractor {
-    private final ClearNoteInputBoundary inputBoundary;
+    private final ClearNoteOutputBoundary clearNotePresenter;
+    private final ClearNoteUserDataAccessInterface userDataAccessObject;
 
-    public ClearNoteInteractor(ClearNoteInputBoundary inputBoundary) {
-        this.inputBoundary = inputBoundary;
+
+    public ClearNoteInteractor(ClearNoteOutputBoundary clearNotePresenter,
+                               ClearNoteUserDataAccessInterface userDataAccessObject) {
+        this.clearNotePresenter = clearNotePresenter;
+        this.userDataAccessObject = userDataAccessObject;
     }
 
-    @Override
-    public void deleteNotebook(String notebookId, ClearNoteOutputBoundary outputBoundary) {
-        try {
-            inputBoundary.deleteNotebook(notebookId);
-            outputBoundary.onSuccess();
-        } catch (Exception e) {
-            outputBoundary.onError(e.getMessage());
-        }
+    public void clear(ClearNoteInputData clearNoteInputData){
+        String filename = clearNoteInputData.getFilename();
+        // TODO: to implement
     }
 }

@@ -37,6 +37,7 @@ public class Main {
         // be observed by the Views.
         EditNoteViewModel loginViewModel = new EditNoteViewModel();
         OpenNoteViewModel loggedInViewModel = new OpenNoteViewModel();
+        ClearNoteViewModel clearViewModel = new ClearNoteViewmodel();
 
         FileUserDataAccessObject userDataAccessObject;
         FileUserDataAccessObject userDataAccessObject1;

@@ -1,13 +1,15 @@
 package use_case.ClearNote_case;
 
 public class ClearNoteOutputData {
-    @Override
-    public void onSuccess() {
-        // Handle success scenario
+    private final String filename;
+    private boolean useCaseFailed;
+
+    public ClearNoteOutputData(String filename, boolean useCaseFailed) {
+        this.filename = filename;
+        this.useCaseFailed = useCaseFailed;
     }
 
-    @Override
-    public void onError(String message) {
-        // Handle error scenario
+    public String getFilename() {
+        return filename;
     }
 }
