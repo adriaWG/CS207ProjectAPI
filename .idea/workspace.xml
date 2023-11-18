@@ -4,41 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="spelling mistake in README.md">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javadoc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javadoc1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outline/src/app/OutNoteUseCaseFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outline/src/interface_adapter/OutNote_adapter/OutNoteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outline/src/interface_adapter/OutNote_adapter/OutNotePresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outline/src/interface_adapter/OutNote_adapter/OutNoteState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/outline/src/interface_adapter/OutNote_adapter/OutNoteViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CS207ProjectAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CS207ProjectAPI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/outline.iml" beforeDir="false" afterPath="$PROJECT_DIR$/outline/outline.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/interface_adapter/EditNoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/interface_adapter/EditNote_adapter/EditNoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/interface_adapter/EditNotePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/interface_adapter/EditNote_adapter/EditNotePresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/interface_adapter/EditNoteState.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/interface_adapter/EditNote_adapter/EditNoteState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/interface_adapter/EditNoteViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/interface_adapter/EditNote_adapter/EditNoteViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/interface_adapter/OpenNoteState.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/interface_adapter/OpenNote_adapter/OpenNoteState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/interface_adapter/OpenNoteViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/interface_adapter/OpenNote_adapter/OpenNoteViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInputBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote_case/ClearNoteInputBoundary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote_case/ClearNoteInputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote_case/ClearNoteInteractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteOutputBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote_case/ClearNoteOutputBoundary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteOutputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote_case/ClearNoteOutputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteUserDataAccessInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote_case/ClearNoteUserDataAccessInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/EditNote/EditNoteInputBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/EditNote_case/EditNoteInputBoundary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/EditNote/EditNoteInputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/EditNote_case/EditNoteInputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/EditNote/EditNoteInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/EditNote_case/EditNoteInteractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/EditNote/EditNoteOutputBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/EditNote_case/EditNoteOutputBoundary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/EditNote/EditNoteOutputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/EditNote_case/EditNoteOutputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/EditNote/EditNoteUserDataAccessInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/EditNote_case/EditNoteUserDataAccessInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/OpenNote/OpenNoteInputBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/OpenNote_case/OpenNoteInputBoundary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/OpenNote/OpenNoteInputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/OpenNote_case/OpenNoteInputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/OpenNote/OpenNoteOutputBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/OpenNote_case/OpenNoteOutputBoundary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/OpenNote/OpenNoteOutputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/OpenNote_case/OpenNoteOutputData.java" afterDir="false" />
+    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="created directories specifying use cases">
+      <change afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInputBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInputBoundary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInputData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInteractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteOutputBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteOutputBoundary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteOutputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteOutputData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteUserDataAccessInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteUserDataAccessInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -61,7 +34,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -77,28 +57,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/IdeaProjects/yauyik/CS207ProjectAPI&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;E:/Codes/software design/Project/noteapi/src/main/java/graphapi.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Emily",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "C:/Users/ASUS/IdeaProjects/yauyik/CS207ProjectAPI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "E:/Codes/software design/Project/noteapi/src/main/java/graphapi.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/outline/src/use_case/OpenNote" />
+      <recent name="$PROJECT_DIR$/outline/src/use_case/EditNote" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -113,7 +99,10 @@
       <workItem from="1698672660370" duration="605000" />
       <workItem from="1699427555609" duration="459000" />
       <workItem from="1699509181081" duration="1741000" />
-      <workItem from="1700279904452" duration="388000" />
+      <workItem from="1699887195148" duration="39000" />
+      <workItem from="1699887273541" duration="124000" />
+      <workItem from="1699887468519" duration="440000" />
+      <workItem from="1699888861100" duration="1065000" />
     </task>
     <task id="LOCAL-00001" summary="add folders">
       <option name="closed" value="true" />
@@ -131,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698673148883</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="created directories specifying use cases">
+      <option name="closed" value="true" />
+      <created>1699888461168</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699888461168</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +139,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Emily" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -152,17 +161,6 @@
     <MESSAGE value="add folders" />
     <MESSAGE value="spelling mistake in README.md" />
     <option name="LAST_COMMIT_MESSAGE" value="spelling mistake in README.md" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/noteapi/src/main/java/graphapi.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
