@@ -1,4 +1,4 @@
-package use_case.EditNote;
+package use_case.EditNote_case;
 
 public class EditNoteOutputData {
 

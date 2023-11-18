@@ -1,8 +1,8 @@
 package app;
 
 import data_access.FileUserDataAccessObject;
-import interface_adapter.EditNoteViewModel;
-import interface_adapter.OpenNoteViewModel;
+import interface_adapter.EditNote_adapter.EditNoteViewModel;
+import interface_adapter.OpenNote_adapter.OpenNoteViewModel;
 import interface_adapter.ViewManagerModel;
 import view.EditNoteView;
 import view.OpenNoteView;
@@ -48,13 +48,13 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        EditNoteView editnoteView = EditNoteUseCaseFactory.create(viewManagerModel, clearViewModel, loginViewModel, signupViewModel, userDataAccessObject,userDataAccessObject1);
-        views.add(editnoteView, editnoteView.viewName);
+        EditNoteView editNoteView = EditNoteUseCaseFactory.create(viewManagerModel, clearViewModel, loginViewModel, signupViewModel, userDataAccessObject,userDataAccessObject1);
+        views.add(editNoteView, editNoteView.viewName);
 
-        OpenNoteView opennoteView = OpenNoteUseCaseFactory.create(viewManagerModel, loginViewModel, loggedInViewModel, userDataAccessObject);
-        views.add(opennoteView, opennoteView.viewName);
+        OpenNoteView openNoteView = OpenNoteUseCaseFactory.create(viewManagerModel, loginViewModel, loggedInViewModel, userDataAccessObject);
+        views.add(openNoteView, openNoteView.viewName);
 
-        viewManagerModel.setActiveView(signupView.viewName);
+        viewManagerModel.setActiveView(XXXView.viewName);
         viewManagerModel.firePropertyChanged();
 
         application.pack();

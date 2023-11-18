@@ -1,4 +1,4 @@
-package interface_adapter;
+package interface_adapter.OpenNote_adapter;
 
 public class OpenNoteState {
     public boolean isAuthenticated;

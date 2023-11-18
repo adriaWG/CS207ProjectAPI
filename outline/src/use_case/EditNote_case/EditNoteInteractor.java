@@ -1,5 +1,4 @@
-package use_case.EditNote;
-import entity.Note;
+package use_case.EditNote_case;
 
 public class EditNoteInteractor implements EditNoteInputBoundary {
 
