@@ -3,7 +3,7 @@ package interface_adapter.OutNote_adapter;
 public class OutNoteState {
     private String filename="";
     private String filepath="";
-    public OutNoteState(OutNoteState copy){filename= copy.filename;}
+    public OutNoteState(OutNoteState copy){filename= copy.filename;filepath=copy.filepath;}
     public OutNoteState(){}
 
     public String getFilename(){return filename;}

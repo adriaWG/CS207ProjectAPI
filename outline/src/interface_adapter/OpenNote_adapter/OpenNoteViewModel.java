@@ -1,20 +1,37 @@
 package interface_adapter.OpenNote_adapter;
 
 import app.OpenNoteUseCaseFactory;
+import interface_adapter.OpenNote_adapter.OpenNoteState;
+import interface_adapter.ViewModel;
 import use_case.OpenNote_case.OpenNoteInputData;
 
-public class OpenNoteViewModel {
-    private final OpenNoteUseCaseFactory useCase;
-    private final OpenNotePresenter presenter;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 
-    public OpenNoteViewModel(OpenNoteUseCaseFactory useCase, OpenNotePresenter presenter){
-        this.useCase =useCase;
-        this.presenter = presenter;
+public class OpenNoteViewModel extends ViewModel {
+    public final String TITLE_LABEL = "OpenNote View";
+
+    private static OpenNoteState state = new OpenNoteState();
+
+    public OpenNoteViewModel(String viewName) {
+        super(viewName);
     }
 
-    public void createNote(){
-        OpenNoteInputData inputData = presenter.collectNoteInput();
+    public void setState(OpenNoteState state) {
+        this.state = state;
+    }
 
-        useCase.createNote(inputData);
+    private final PropertyChangeSupport support = new PropertyChangeSupport(this);
+
+    public void firePropertyChanged() {
+        support.firePropertyChange("state", null, this.state);
+    }
+
+    public void addPropertyChangeListener(PropertyChangeListener listener) {
+        support.addPropertyChangeListener(listener);
+    }
+
+    public static OpenNoteState getState() {
+        return state;
     }
 }
