@@ -5,15 +5,15 @@ import use_case.OpenNote_case.OpenNoteInputData;
 
 public class OpenNoteViewModel {
     private final OpenNoteUseCaseFactory useCase;
-    private final view.OpenNoteView view;
+    private final OpenNotePresenter presenter;
 
-    public OpenNoteViewModel(OpenNoteUseCaseFactory useCase, view.OpenNoteView view){
+    public OpenNoteViewModel(OpenNoteUseCaseFactory useCase, OpenNotePresenter presenter){
         this.useCase =useCase;
-        this.view = view;
+        this.presenter = presenter;
     }
 
     public void createNote(){
-        OpenNoteInputData inputData = view.collectNoteInput();
+        OpenNoteInputData inputData = presenter.collectNoteInput();
 
         useCase.createNote(inputData);
     }
