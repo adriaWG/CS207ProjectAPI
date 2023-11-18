@@ -18,6 +18,11 @@ public class EditNoteState {
     public String getFilenameError() {
         return filenameError;
     }
-
+    public void setFilename(String filename) {
+        this.filename = filename;
+    }
+    public void setFilenameError(String filename) {
+        this.filename = filename;
+    }
 
 }

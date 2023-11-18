@@ -1,5 +1,6 @@
 package interface_adapter.EditNote_adapter;
 
+import interface_adapter.ViewManagerModel;
 import use_case.EditNote_case.EditNoteOutputBoundary;
 import use_case.EditNote_case.EditNoteOutputData;
 
