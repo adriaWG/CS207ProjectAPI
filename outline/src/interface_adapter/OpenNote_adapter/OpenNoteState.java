@@ -1,28 +1,15 @@
 package interface_adapter.OpenNote_adapter;
 
+import interface_adapter.OpenNote_adapter.OpenNoteState;
+
 public class OpenNoteState {
-    public boolean isAuthenticated;
-    private String errorMessage;
+    private String noteId="";
+    private String message="";
+    public OpenNoteState(OpenNoteState copy){noteId= copy.noteId; message=copy.message;}
+    public OpenNoteState(){}
 
-    public OpenNoteState(){
-        // initialise the state
-        isAuthenticated = false;
-        errorMessage = null;
-    }
-
-    public boolean isAuthenticated(){
-        return isAuthenticated;
-    }
-
-    public void setAuthenticated(boolean isAuthenticated){
-        this.isAuthenticated = isAuthenticated;
-    }
-
-    public String getErrorMessage(){
-        return errorMessage;
-    }
-
-    public void setErrorMessage(String errorMessage){
-        this.errorMessage = errorMessage;
-    }
+    public String getNoteId(){return noteId;}
+    public String getMessage(){return message;}
+    public void setNoteId(String noteId){this.noteId=noteId;}
+    public void setMessage(String message){this.message=message;}
 }

@@ -1,12 +1,17 @@
 package interface_adapter.OpenNote_adapter;
 
+import use_case.OpenNote_case.OpenNoteInputBoundary;
+import use_case.OpenNote_case.OpenNoteInputData;
+
 public class OpenNoteController {
-    private final OpenNoteViewModel viewModel;
-    public OpenNoteController(OpenNoteViewModel viewModel){
-        this.viewModel = viewModel;
+    final OpenNoteInputBoundary openNoteUseCaseInteractor;
+    public OpenNoteController(use_case.OpenNote_case.OpenNoteInputBoundary openNoteUseCaseInteractor) {
+        this.openNoteUseCaseInteractor = openNoteUseCaseInteractor;
     }
 
-    public void handleCreateNote(){
-        viewModel.createNote();
+
+    public void execute(String title,String content) {
+        OpenNoteInputData openNoteInputData = new OpenNoteInputData(title,content);
+        openNoteUseCaseInteractor.createNote(openNoteInputData);
     }
 }
