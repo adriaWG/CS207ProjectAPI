@@ -10,7 +10,8 @@ import java.beans.PropertyChangeSupport;
 
 public class OpenNoteViewModel extends ViewModel {
     public final String TITLE_LABEL = "OpenNote View";
-
+    public static final String OPEN_BUTTON_LABEL = "Open";
+    public static final String CANCEL_BUTTON_LABEL = "Cancel";
     private static OpenNoteState state = new OpenNoteState();
 
     public OpenNoteViewModel(String viewName) {

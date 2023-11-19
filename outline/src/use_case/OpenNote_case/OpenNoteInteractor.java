@@ -22,4 +22,7 @@ public class OpenNoteInteractor implements OpenNoteInputBoundary {
         String content = openNoteInputData.getContent();
         //TODO: others
     }
+
+
+
 }

@@ -14,7 +14,7 @@ public class EditNoteView {
 //
 //// To delete a notebook
 //interactor.deleteNotebook("yourNotebookId", outputBoundary);
-
+}
 
 
 
