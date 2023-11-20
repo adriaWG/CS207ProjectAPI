@@ -1,7 +1,5 @@
 package interface_adapter.ClearNote_adapter;
 
-import interface_adapter.EditNote_adapter.EditNoteState;
-import interface_adapter.EditNote_adapter.EditNoteViewModel;
 import interface_adapter.ViewManagerModel;
 import use_case.EditNote_case.EditNoteOutputData;
 

@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="OpenNoteViewModel.java">
+    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="clearNote interface_adapter">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-12,_7_33 p_m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-12__7_33p_m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outline/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInputBoundary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInputData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInteractor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteOutputBoundary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteOutputData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote/ClearNoteUserDataAccessInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote_case/ClearNoteInputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote_case/ClearNoteInputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote_case/ClearNoteInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote_case/ClearNoteInteractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote_case/ClearNoteInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote_case/ClearNoteOutputBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote_case/ClearNoteOutputBoundary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/use_case/ClearNote_case/ClearNoteOutputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/use_case/ClearNote_case/ClearNoteOutputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/view/EditNoteView.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/view/EditNoteView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/src/interface_adapter/ClearNote_adapter/ClearNotePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/interface_adapter/ClearNote_adapter/ClearNotePresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/src/interface_adapter/ClearNote_adapter/ClearNoteViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/interface_adapter/ClearNote_adapter/ClearNoteViewModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Emily" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -164,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700348238605</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="clearNote interface_adapter">
+      <option name="closed" value="true" />
+      <created>1700491232075</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700491232075</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +196,8 @@
     <MESSAGE value="created OpenNoteController.java for interface adapter" />
     <MESSAGE value="created OpenNotePresenter.java for interface adapter" />
     <MESSAGE value="OpenNoteViewModel.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="OpenNoteViewModel.java" />
+    <MESSAGE value="clearNote interface_adapter" />
+    <option name="LAST_COMMIT_MESSAGE" value="clearNote interface_adapter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,6 +1,7 @@
 package app;
 
 import data_access.FileUserDataAccessObject;
+import interface_adapter.ClearNote_adapter.ClearNoteViewModel;
 import interface_adapter.EditNote_adapter.EditNoteViewModel;
 import interface_adapter.OpenNote_adapter.OpenNoteViewModel;
 import interface_adapter.ViewManagerModel;
@@ -37,7 +38,7 @@ public class Main {
         // be observed by the Views.
         EditNoteViewModel loginViewModel = new EditNoteViewModel();
         OpenNoteViewModel loggedInViewModel = new OpenNoteViewModel();
-        ClearNoteViewModel clearViewModel = new ClearNoteViewmodel();
+        // ClearNoteViewModel clearViewModel = new ClearNoteViewmodel();
 
         FileUserDataAccessObject userDataAccessObject;
         FileUserDataAccessObject userDataAccessObject1;
