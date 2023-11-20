@@ -1,13 +1,16 @@
 package use_case.EditNote_case;
 
+import interface_adapter.EditNote_adapter.EditNoteViewModel;
+import interface_adapter.ViewManagerModel;
+
 public class EditNoteInteractor implements EditNoteInputBoundary {
 
-    final EditNoteUserDataAccessInterface userDataAccessObject;
+    final EditNoteUserDataAccessInterface noteDataAccessObject;
     final EditNoteOutputBoundary editNotePresenter;
 
-    public EditNoteInteractor(EditNoteUserDataAccessInterface userDataAccessInterface,
+    public EditNoteInteractor(EditNoteUserDataAccessInterface noteDataAccessInterface,
                               EditNoteOutputBoundary editNoteOutputBoundary) {
-        this.userDataAccessObject = userDataAccessInterface;
+        this.noteDataAccessObject = noteDataAccessInterface;
         this.editNotePresenter = editNoteOutputBoundary;
     }
 
