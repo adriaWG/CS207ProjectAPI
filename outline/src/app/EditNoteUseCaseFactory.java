@@ -1,9 +1,17 @@
 package app;
 
 import entity.CommonNoteFactory;
+import interface_adapter.ClearNote_adapter.ClearNoteController;
+import interface_adapter.ClearNote_adapter.ClearNotePresenter;
+import interface_adapter.ClearNote_adapter.ClearNoteViewModel;
 import interface_adapter.EditNote_adapter.EditNoteController;
+import interface_adapter.EditNote_adapter.EditNotePresenter;
 import interface_adapter.EditNote_adapter.EditNoteViewModel;
 import interface_adapter.ViewManagerModel;
+import use_case.ClearNote_case.ClearNoteInputBoundary;
+import use_case.ClearNote_case.ClearNoteInteractor;
+import use_case.ClearNote_case.ClearNoteOutputBoundary;
+import use_case.ClearNote_case.ClearNoteUserDataAccessInterface;
 import use_case.EditNote_case.EditNoteInputBoundary;
 import use_case.EditNote_case.EditNoteInteractor;
 import use_case.EditNote_case.EditNoteOutputBoundary;
@@ -37,7 +45,7 @@ public class EditNoteUseCaseFactory {
             EditNoteUserDataAccessInterface editNoteDataAccessObject) throws IOException {
 
         // Notice how we pass this method's parameters to the Presenter.
-        EditNoteOutputBoundary editNoteOutputBoundary = new EditNoteInteractor(viewManagerModel, editNoteViewModel);
+        EditNoteOutputBoundary editNoteOutputBoundary = new EditNotePresenter(viewManagerModel, editNoteViewModel);
 
         CommonNoteFactory userFactory = new CommonNoteFactory();
 
@@ -46,7 +54,16 @@ public class EditNoteUseCaseFactory {
         return new EditNoteController(editNoteInteractor);
     }
 
+    private static ClearNoteController createClearNoteUseCase(
+            ViewManagerModel viewManagerModel,
+            ClearNoteViewModel clearNoteViewModel,
+            ClearNoteUserDataAccessInterface clearNoteUserDataAccessInterface) throws IOException {
+
+        ClearNoteOutputBoundary clearNoteOutputBoundary = new ClearNotePresenter(viewManagerModel, clearNoteViewModel);
+        ClearNoteInputBoundary clearNoteInteractor = new ClearNoteInteractor(clearNoteOutputBoundary, clearNoteUserDataAccessInterface);
+        return new ClearNoteController(clearNoteInteractor);
     }
+}
 
 
 
