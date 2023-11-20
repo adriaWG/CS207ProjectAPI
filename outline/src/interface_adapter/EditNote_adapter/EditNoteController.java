@@ -9,7 +9,7 @@ public class EditNoteController {
         this.editUseCaseInteractor = editUseCaseInteractor;
     }
 
-    public void execute(String filename) {
+    public void editNote(String filename) {
         EditNoteInputData editNoteInputData = new EditNoteInputData(
                 filename);
 
