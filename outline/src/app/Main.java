@@ -38,7 +38,7 @@ public class Main {
         // be observed by the Views.
         EditNoteViewModel loginViewModel = new EditNoteViewModel();
         OpenNoteViewModel loggedInViewModel = new OpenNoteViewModel();
-        // ClearNoteViewModel clearViewModel = new ClearNoteViewmodel();
+        ClearNoteViewModel clearViewModel = new ClearNoteViewModel();
 
         FileUserDataAccessObject userDataAccessObject;
         FileUserDataAccessObject userDataAccessObject1;
@@ -56,8 +56,6 @@ public class Main {
         OpenNoteView openNoteView = OpenNoteUseCaseFactory.create(viewManagerModel, loginViewModel, loggedInViewModel, userDataAccessObject);
         views.add(openNoteView, openNoteView.viewName);
 
-        viewManagerModel.setActiveView(XXXView.viewName);
-        viewManagerModel.firePropertyChanged();
 
         application.pack();
         application.setVisible(true);

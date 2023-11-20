@@ -1,14 +1,20 @@
 package app;
 
+import entity.CommonNoteFactory;
+import entity.NoteFactory;
 import interface_adapter.EditNote_adapter.EditNoteController;
+import interface_adapter.EditNote_adapter.EditNotePresenter;
 import interface_adapter.EditNote_adapter.EditNoteViewModel;
 import interface_adapter.ViewManagerModel;
+import use_case.EditNote_case.EditNoteInputBoundary;
+import use_case.EditNote_case.EditNoteInteractor;
 import use_case.EditNote_case.EditNoteOutputBoundary;
 import use_case.EditNote_case.EditNoteUserDataAccessInterface;
 import view.EditNoteView;
 
 import javax.swing.*;
 import java.io.IOException;
+
 
 public class EditNoteUseCaseFactory {
 
@@ -28,20 +34,20 @@ public class EditNoteUseCaseFactory {
         return null;
     }
 
-    private static EditController createLoginUseCase(
+    private static EditNoteController createEditNoteUseCase(
             ViewManagerModel viewManagerModel,
             EditNoteViewModel editNoteViewModel,
             EditNoteUserDataAccessInterface noteDataAccessObject) throws IOException {
 
         // Notice how we pass this method's parameters to the Presenter.
-        EditNoteOutputBoundary editNoteOutputBoundary = new LoginPresenter(viewManagerModel, loggedInViewModel, loginViewModel);
+        EditNoteOutputBoundary editNoteOutputBoundary = new EditNotePresenter(viewManagerModel, editNoteViewModel);
 
-        UserFactory userFactory = new CommonUserFactory();
+        NoteFactory noteFactory = new CommonNoteFactory();
 
-        LoginInputBoundary loginInteractor = new LoginInteractor(
-                userDataAccessObject, loginOutputBoundary);
+        EditNoteInputBoundary editNoteInteractor = new EditNoteInteractor(
+                noteDataAccessObject, editNoteOutputBoundary);
 
-        return new LoginController(loginInteractor);
+        return new EditNoteController(editNoteInteractor);
     }
 
     }

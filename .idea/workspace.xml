@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="clearNote interface_adapter">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-11-13__10_04a_m___Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-12,_7_33 p_m__[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-12__7_33p_m___Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/src/app/EditNoteUseCaseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/app/EditNoteUseCaseFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outline/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/interface_adapter/ClearNote_adapter/ClearNotePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/interface_adapter/ClearNote_adapter/ClearNotePresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/interface_adapter/ClearNote_adapter/ClearNoteViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/interface_adapter/ClearNote_adapter/ClearNoteViewModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
