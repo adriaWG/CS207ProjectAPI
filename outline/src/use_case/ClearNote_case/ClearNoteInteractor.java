@@ -1,18 +1,19 @@
 package use_case.ClearNote_case;
 
+import java.util.Set;
+
 public class ClearNoteInteractor {
     private final ClearNoteOutputBoundary clearNotePresenter;
-    private final ClearNoteUserDataAccessInterface userDataAccessObject;
+    private static ClearNoteUserDataAccessInterface userDataAccessObject;
 
 
     public ClearNoteInteractor(ClearNoteOutputBoundary clearNotePresenter,
                                ClearNoteUserDataAccessInterface userDataAccessObject) {
         this.clearNotePresenter = clearNotePresenter;
-        this.userDataAccessObject = userDataAccessObject;
+        ClearNoteInteractor.userDataAccessObject = userDataAccessObject;
     }
 
-    public void clear(ClearNoteInputData clearNoteInputData){
-        String filename = clearNoteInputData.getFilename();
-        // TODO: to implement
+    public static void execute() {
+        userDataAccessObject.deleteNotebook();
     }
 }
