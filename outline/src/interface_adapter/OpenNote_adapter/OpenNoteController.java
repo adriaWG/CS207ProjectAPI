@@ -10,7 +10,11 @@ public class OpenNoteController {
     }
 
 
-    public void execute(String title,String content) {
+    public void openNote(String title) {
+        //TODO: call note from api
+    }
+
+    public void newNote(String title,String content) {
         OpenNoteInputData openNoteInputData = new OpenNoteInputData(title,content);
         openNoteUseCaseInteractor.createNote(openNoteInputData);
     }

@@ -16,5 +16,7 @@ public class OpenNoteInputData {
     public String getContent(){
         return content;
     }
+    //TODO: change this below
+    public String callFile(){}
 }
 
