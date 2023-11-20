@@ -13,8 +13,7 @@ public class OpenNotePresenter implements OpenNoteOutputBoundary{
     private ViewManagerModel viewManagerModel;
 
     public OpenNotePresenter(ViewManagerModel viewManagerModel,
-                            OpenNoteViewModel openNoteViewModel,
-                            EditNoteViewModel editNoteViewModel) {
+                            OpenNoteViewModel openNoteViewModel) {
         this.viewManagerModel = viewManagerModel;
         this.openNoteViewModel = openNoteViewModel;
         //this.editNoteViewModel = editNoteViewModel;
