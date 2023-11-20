@@ -1,8 +1,11 @@
 package app;
 
+import entity.CommonNoteFactory;
 import interface_adapter.EditNote_adapter.EditNoteController;
 import interface_adapter.EditNote_adapter.EditNoteViewModel;
 import interface_adapter.ViewManagerModel;
+import use_case.EditNote_case.EditNoteInputBoundary;
+import use_case.EditNote_case.EditNoteInteractor;
 import use_case.EditNote_case.EditNoteOutputBoundary;
 import use_case.EditNote_case.EditNoteUserDataAccessInterface;
 import view.EditNoteView;
@@ -17,9 +20,9 @@ public class EditNoteUseCaseFactory {
     public static EditNoteView create(
             ViewManagerModel viewManagerModel,
             EditNoteViewModel editNoteViewModel,
-            EditNoteUserDataAccessInterface noteDataAccessObject) {
+            EditNoteUserDataAccessInterface editNoteDataAccessObject) {
         try {
-            EditNoteController editNoteController = createEditNoteUseCase(viewManagerModel, editNoteViewModel, noteDataAccessObject);
+            EditNoteController editNoteController = createEditNoteUseCase(viewManagerModel, editNoteViewModel, editNoteDataAccessObject);
             return new EditNoteView(editNoteViewModel, editNoteController);
         } catch (IOException e) {
             JOptionPane.showMessageDialog(null, "Could not edit file.");
@@ -28,20 +31,19 @@ public class EditNoteUseCaseFactory {
         return null;
     }
 
-    private static EditController createLoginUseCase(
+    private static EditNoteController createEditNoteUseCase(
             ViewManagerModel viewManagerModel,
             EditNoteViewModel editNoteViewModel,
-            EditNoteUserDataAccessInterface noteDataAccessObject) throws IOException {
+            EditNoteUserDataAccessInterface editNoteDataAccessObject) throws IOException {
 
         // Notice how we pass this method's parameters to the Presenter.
-        EditNoteOutputBoundary editNoteOutputBoundary = new LoginPresenter(viewManagerModel, loggedInViewModel, loginViewModel);
+        EditNoteOutputBoundary editNoteOutputBoundary = new EditNoteInteractor(viewManagerModel, editNoteViewModel);
 
-        UserFactory userFactory = new CommonUserFactory();
+        CommonNoteFactory userFactory = new CommonNoteFactory();
 
-        LoginInputBoundary loginInteractor = new LoginInteractor(
-                userDataAccessObject, loginOutputBoundary);
+        EditNoteInputBoundary editNoteInteractor = new EditNoteInteractor(editNoteDataAccessObject, editNoteOutputBoundary);
 
-        return new LoginController(loginInteractor);
+        return new EditNoteController(editNoteInteractor);
     }
 
     }
