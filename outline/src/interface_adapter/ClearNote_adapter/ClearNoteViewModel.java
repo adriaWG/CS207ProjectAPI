@@ -6,6 +6,7 @@ import java.beans.PropertyChangeSupport;
 import interface_adapter.ViewModel;
 
 public class ClearNoteViewModel extends ViewModel {
+    public final String CLEAR_BUTTON_LABEL = "Clear page";
     private ClearNoteState state = new ClearNoteState();
 
     public ClearNoteViewModel() {

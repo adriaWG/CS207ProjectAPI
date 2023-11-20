@@ -6,7 +6,7 @@ import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
 public class OutNoteViewModel extends ViewModel {
-    public final String TITLE_LABEL = "OutNote View";
+    public final String EXPORT_BUTTON_LABEL = "Export Note View";
 
     private static OutNoteState state = new OutNoteState();
 
