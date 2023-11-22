@@ -7,6 +7,8 @@ import interface_adapter.ClearNote_adapter.ClearNoteViewModel;
 import interface_adapter.EditNote_adapter.EditNoteController;
 import interface_adapter.EditNote_adapter.EditNotePresenter;
 import interface_adapter.EditNote_adapter.EditNoteViewModel;
+import interface_adapter.OutNote_adapter.OutNoteController;
+import interface_adapter.OutNote_adapter.OutNoteViewModel;
 import interface_adapter.ViewManagerModel;
 import use_case.ClearNote_case.ClearNoteInputBoundary;
 import use_case.ClearNote_case.ClearNoteInteractor;
@@ -27,11 +29,14 @@ public class EditNoteUseCaseFactory {
     private EditNoteUseCaseFactory() {}
     public static EditNoteView create(
             ViewManagerModel viewManagerModel,
-            EditNoteViewModel editNoteViewModel,
-            EditNoteUserDataAccessInterface editNoteDataAccessObject) {
+            EditNoteViewModel editNoteViewModel, EditNoteUserDataAccessInterface editNoteDataAccessObject,
+            OutNoteController outNoteController, OutNoteViewModel outNoteViewModel,
+            ClearNoteViewModel clearNoteViewModel,
+            ClearNoteUserDataAccessInterface clearNoteDataAccessObject) {
         try {
             EditNoteController editNoteController = createEditNoteUseCase(viewManagerModel, editNoteViewModel, editNoteDataAccessObject);
-            return new EditNoteView(editNoteViewModel, editNoteController);
+            ClearNoteController clearNoteController= createClearNoteUseCase(viewManagerModel, clearNoteViewModel,clearNoteDataAccessObject);
+            return new EditNoteView(editNoteViewModel, editNoteController,outNoteController,outNoteViewModel,clearNoteController,clearNoteViewModel);
         } catch (IOException e) {
             JOptionPane.showMessageDialog(null, "Could not edit file.");
         }
@@ -57,10 +62,10 @@ public class EditNoteUseCaseFactory {
     private static ClearNoteController createClearNoteUseCase(
             ViewManagerModel viewManagerModel,
             ClearNoteViewModel clearNoteViewModel,
-            ClearNoteUserDataAccessInterface clearNoteUserDataAccessInterface) throws IOException {
+            ClearNoteUserDataAccessInterface clearNoteDataAccessObject) throws IOException {
 
         ClearNoteOutputBoundary clearNoteOutputBoundary = new ClearNotePresenter(viewManagerModel, clearNoteViewModel);
-        ClearNoteInputBoundary clearNoteInteractor = new ClearNoteInteractor(clearNoteOutputBoundary, clearNoteUserDataAccessInterface);
+        ClearNoteInputBoundary clearNoteInteractor = new ClearNoteInteractor(clearNoteOutputBoundary,clearNoteDataAccessObject );
         return new ClearNoteController(clearNoteInteractor);
     }
 }

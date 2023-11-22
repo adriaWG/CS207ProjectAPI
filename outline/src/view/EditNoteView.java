@@ -2,15 +2,15 @@ package view;
 
 import interface_adapter.EditNote_adapter.EditNoteController;
 import interface_adapter.EditNote_adapter.EditNoteViewModel;
-import interface_adapter.EditNote_adapter.EditNoteController;
-import interface_adapter.EditNote_adapter.EditNoteViewModel;
+
 import interface_adapter.EditNote_adapter.EditNoteState;
-import interface_adapter.EditNote_adapter.EditNoteState;
+import interface_adapter.OutNote_adapter.OutNoteController;
+import interface_adapter.OutNote_adapter.OutNoteViewModel;
 import use_case.ClearNote_case.ClearNoteInputBoundary;
 import interface_adapter.ClearNote_adapter.ClearNoteController;
 import interface_adapter.ClearNote_adapter.ClearNotePresenter;
 import interface_adapter.ClearNote_adapter.ClearNoteState;
-import interface_adapter.ClearNote_adapter.ClearNoteController;
+import interface_adapter.ClearNote_adapter.ClearNoteViewModel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,21 +22,33 @@ import java.beans.PropertyChangeListener;
 public class EditNoteView extends JPanel implements ActionListener, PropertyChangeListener {
     public final String viewName="Edit Note";
     private final EditNoteViewModel editNoteViewModel;
+    private final OutNoteViewModel outNoteViewModel;
+    private final ClearNoteViewModel clearNoteViewModel;
 
     final JTextField filenameInputField = new JTextField(100);
     private final JLabel filenameErrorField = new JLabel();
 
     private final JButton edit;
     private final JButton cancel;
-    //private final JButton clear;
-    //private final JButton export;
+    private final JButton clear;
+    private final JButton export;
     private final EditNoteController editNoteController;
+    private final OutNoteController outNoteController;
+    private final ClearNoteController clearNoteController;
 
 
-    public EditNoteView(EditNoteViewModel editNoteViewModel, EditNoteController controller) {
+    public EditNoteView(EditNoteViewModel editNoteViewModel, EditNoteController editNoteController,
+                        OutNoteController outNoteController,OutNoteViewModel outNoteViewModel,
+                        ClearNoteController clearNoteController, ClearNoteViewModel clearNoteViewModel) {
 
-        this.editNoteController = controller;
+        this.editNoteController = editNoteController;
         this.editNoteViewModel = editNoteViewModel;
+        this.outNoteController = outNoteController;
+        this.outNoteViewModel = outNoteViewModel;
+        this.clearNoteController=clearNoteController;
+        this.clearNoteViewModel=clearNoteViewModel;
+
+
         this.editNoteViewModel.addPropertyChangeListener(this);
 
         JLabel title = new JLabel("Edit Note View");
@@ -50,10 +62,10 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
         buttons.add(edit);
         cancel = new JButton(editNoteViewModel.CANCEL_BUTTON_LABEL);
         buttons.add(cancel);
-        //clear = new JButton(clearNoteViewModel.CLEAR_BUTTON_LABEL);
-        //buttons.add(clear);
-        //export = new JButton(outNoteViewModel.EXPORT_BUTTON_LABEL);
-        //buttons.add(export);
+        clear = new JButton(clearNoteViewModel.CLEAR_BUTTON_LABEL);
+        buttons.add(clear);
+        export = new JButton(outNoteViewModel.EXPORT_BUTTON_LABEL);
+        buttons.add(export);
 
         edit.addActionListener(
                 new ActionListener() {
@@ -67,9 +79,35 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
         );
         
         cancel.addActionListener(this);
-        //clear.addActionListener(this);
-        //export.addActionListener(this);
+
+        clear.addActionListener(
+                new ActionListener() {
+                    public void actionPerformed(ActionEvent evt) {
+                        if (evt.getSource().equals(clear)) {
+                            EditNoteState currentState = editNoteViewModel.getState();
+                            editNoteController.editNote(currentState.getFilename());
+                        }
+                    }
+                }
+        );
+
+        export.addActionListener(
+                new ActionListener() {
+                    public void actionPerformed(ActionEvent evt) {
+                        if (evt.getSource().equals(export)) {
+                            EditNoteState currentState = editNoteViewModel.getState();
+                            editNoteController.editNote(currentState.getFilename());
+                        }
+                    }
+                }
+        );
+
+
+
 }
+
+
+
     @Override
     public void actionPerformed(ActionEvent e) {
         JOptionPane.showConfirmDialog(this, "Function not implemented yet.");

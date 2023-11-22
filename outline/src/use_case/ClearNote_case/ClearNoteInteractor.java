@@ -2,7 +2,7 @@ package use_case.ClearNote_case;
 
 import java.util.Set;
 
-public class ClearNoteInteractor {
+public class ClearNoteInteractor implements ClearNoteInputBoundary {
     private final ClearNoteOutputBoundary clearNotePresenter;
     private static ClearNoteUserDataAccessInterface userDataAccessObject;
 
@@ -15,5 +15,10 @@ public class ClearNoteInteractor {
 
     public static void execute() {
         userDataAccessObject.deleteNotebook();
+    }
+
+    @Override
+    public void deleteNotebook(String notebookId) {
+
     }
 }

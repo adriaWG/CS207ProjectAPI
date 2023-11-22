@@ -1,22 +1,24 @@
 package interface_adapter.ClearNote_adapter;
 
 import interface_adapter.ViewManagerModel;
+import use_case.ClearNote_case.ClearNoteOutputBoundary;
+import use_case.ClearNote_case.ClearNoteOutputData;
 import use_case.EditNote_case.EditNoteOutputData;
 
-public class ClearNotePresenter {
+public class ClearNotePresenter implements ClearNoteOutputBoundary {
     private final ClearNoteViewModel clearNoteViewModel;
     private ViewManagerModel viewManagerModel;
 
-    public ClearNotePresenter(ViewManagerModel viewManagerModel,
+    public ClearNotePresenter (ViewManagerModel viewManagerModel,
                              ClearNoteViewModel clearNoteViewModel) {
         this.viewManagerModel = viewManagerModel;
         this.clearNoteViewModel = clearNoteViewModel;
     }
 
-    public void prepareSuccessView(EditNoteOutputData response) {
-
+    @Override
+    public void prepareSuccessView(ClearNoteOutputData clearNoteOutputData) {
         ClearNoteState clearNoteState = clearNoteViewModel.getState();
-        clearNoteState.setFilename(response.getFilename());
+        clearNoteState.setFilename(clearNoteOutputData.getFilename());
         this.clearNoteViewModel.setState(clearNoteState);
         this.clearNoteViewModel.firePropertyChanged();
 
