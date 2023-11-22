@@ -10,7 +10,7 @@ import use_case.ClearNote_case.ClearNoteInputBoundary;
 import interface_adapter.ClearNote_adapter.ClearNoteController;
 import interface_adapter.ClearNote_adapter.ClearNotePresenter;
 import interface_adapter.ClearNote_adapter.ClearNoteState;
-import interface_adapter.ClearNote_adapter.ClearNoteViewModel;
+import interface_adapter.ClearNote_adapter.ClearNoteController;
 
 import javax.swing.*;
 import java.awt.*;
@@ -28,8 +28,8 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
 
     private final JButton edit;
     private final JButton cancel;
-    private final JButton clear;
-    private final JButton export;
+    //private final JButton clear;
+    //private final JButton export;
     private final EditNoteController editNoteController;
 
 
@@ -50,10 +50,10 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
         buttons.add(edit);
         cancel = new JButton(editNoteViewModel.CANCEL_BUTTON_LABEL);
         buttons.add(cancel);
-        clear = new JButton(clearNoteViewModel.CLEAR_BUTTON_LABEL);
-        buttons.add(clear);
-        export = new JButton(outNoteViewModel.EXPORT_BUTTON_LABEL);
-        buttons.add(export);
+        //clear = new JButton(clearNoteViewModel.CLEAR_BUTTON_LABEL);
+        //buttons.add(clear);
+        //export = new JButton(outNoteViewModel.EXPORT_BUTTON_LABEL);
+        //buttons.add(export);
 
         edit.addActionListener(
                 new ActionListener() {
@@ -67,8 +67,8 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
         );
         
         cancel.addActionListener(this);
-        clear.addActionListener(this);
-        export.addActionListener(this);
+        //clear.addActionListener(this);
+        //export.addActionListener(this);
 }
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -99,4 +99,4 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
 
 
 
-}
+
