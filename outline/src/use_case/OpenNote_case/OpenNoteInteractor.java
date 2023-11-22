@@ -23,12 +23,12 @@ public class OpenNoteInteractor implements OpenNoteInputBoundary {
         //TODO: others
     }
 
-    @Override //some kind of execute that deal with outNote InputData
-    public void callFile(OpenNoteInputData openNoteInputData) {
-        String title = openNoteInputData.getTitle();
-        String content = openNoteInputData.getContent();
-        //TODO: others
-    }
+//    @Override //some kind of execute that deal with outNote InputData
+//    public void callFile(OpenNoteInputData openNoteInputData) {
+//        String title = openNoteInputData.getTitle();
+//        String content = openNoteInputData.getContent();
+//        //TODO: others
+//    }
 
 
 
