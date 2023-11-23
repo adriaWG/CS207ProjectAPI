@@ -4,8 +4,8 @@ public class CommonNoteFactory implements NoteFactory{
 
 
     @Override
-    public Note create(String filename, String content) {
-        return new CommonNote(filename, content);
+    public Note create(String filename, String filepath,String content) {
+        return new CommonNote(filename, filepath,content);
     }
 
     @Override
