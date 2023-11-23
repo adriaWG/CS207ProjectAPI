@@ -10,8 +10,8 @@ public class OutNoteViewModel extends ViewModel {
 
     private static OutNoteState state = new OutNoteState();
 
-    public OutNoteViewModel(String viewName) {
-        super(viewName);
+    public OutNoteViewModel() {
+        super("out note");
     }
 
     public void setState(OutNoteState state) {

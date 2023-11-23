@@ -11,8 +11,8 @@ public class OutNotePresenter implements OutNoteOutputBoundary {
     private ViewManagerModel viewManagerModel;
 
     public OutNotePresenter(ViewManagerModel viewManagerModel,
-                          OutNoteViewModel outNoteViewModel,
-                          EditNoteViewModel editNoteViewModel) {
+                          OutNoteViewModel outNoteViewModel
+                          ) {
         this.viewManagerModel = viewManagerModel;
         this.outNoteViewModel = outNoteViewModel;
         //this.edtiNoteViewModel = editNoteViewModel;

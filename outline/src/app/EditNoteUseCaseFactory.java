@@ -8,6 +8,7 @@ import interface_adapter.EditNote_adapter.EditNoteController;
 import interface_adapter.EditNote_adapter.EditNotePresenter;
 import interface_adapter.EditNote_adapter.EditNoteViewModel;
 import interface_adapter.OutNote_adapter.OutNoteController;
+import interface_adapter.OutNote_adapter.OutNotePresenter;
 import interface_adapter.OutNote_adapter.OutNoteViewModel;
 import interface_adapter.ViewManagerModel;
 import use_case.ClearNote_case.ClearNoteInputBoundary;
@@ -18,6 +19,10 @@ import use_case.EditNote_case.EditNoteInputBoundary;
 import use_case.EditNote_case.EditNoteInteractor;
 import use_case.EditNote_case.EditNoteOutputBoundary;
 import use_case.EditNote_case.EditNoteUserDataAccessInterface;
+import use_case.OutNote_case.OutNoteInputBoundary;
+import use_case.OutNote_case.OutNoteInteractor;
+import use_case.OutNote_case.OutNoteOutputBoundary;
+import use_case.OutNote_case.OutNoteUserDataAccessInterface;
 import view.EditNoteView;
 
 import javax.swing.*;
@@ -30,12 +35,14 @@ public class EditNoteUseCaseFactory {
     public static EditNoteView create(
             ViewManagerModel viewManagerModel,
             EditNoteViewModel editNoteViewModel, EditNoteUserDataAccessInterface editNoteDataAccessObject,
-            OutNoteController outNoteController, OutNoteViewModel outNoteViewModel,
+            //OutNoteController outNoteController,
+            OutNoteViewModel outNoteViewModel, OutNoteUserDataAccessInterface outNoteDataAccessObject,
             ClearNoteViewModel clearNoteViewModel,
             ClearNoteUserDataAccessInterface clearNoteDataAccessObject) {
         try {
             EditNoteController editNoteController = createEditNoteUseCase(viewManagerModel, editNoteViewModel, editNoteDataAccessObject);
             ClearNoteController clearNoteController= createClearNoteUseCase(viewManagerModel, clearNoteViewModel,clearNoteDataAccessObject);
+            OutNoteController outNoteController=createOutNoteUseCase(viewManagerModel, outNoteViewModel,outNoteDataAccessObject);
             return new EditNoteView(editNoteViewModel, editNoteController,outNoteController,outNoteViewModel,clearNoteController,clearNoteViewModel);
         } catch (IOException e) {
             JOptionPane.showMessageDialog(null, "Could not edit file.");
@@ -68,7 +75,18 @@ public class EditNoteUseCaseFactory {
         ClearNoteInputBoundary clearNoteInteractor = new ClearNoteInteractor(clearNoteOutputBoundary,clearNoteDataAccessObject );
         return new ClearNoteController(clearNoteInteractor);
     }
+
+    private static OutNoteController createOutNoteUseCase(
+            ViewManagerModel viewManagerModel,
+            OutNoteViewModel outNoteViewModel,
+            OutNoteUserDataAccessInterface outNoteDataAccessObject) throws IOException {
+
+        OutNoteOutputBoundary outNoteOutputBoundary = new OutNotePresenter(viewManagerModel, outNoteViewModel);
+        OutNoteInputBoundary outNoteInteractor = new OutNoteInteractor(outNoteDataAccessObject,outNoteOutputBoundary );
+        return new OutNoteController(outNoteInteractor);
+    }
 }
+
 
 
 

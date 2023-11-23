@@ -1,9 +1,12 @@
 package app;
 
 import data_access.FileUserDataAccessObject;
+import entity.CommonNoteFactory;
 import interface_adapter.ClearNote_adapter.ClearNoteViewModel;
 import interface_adapter.EditNote_adapter.EditNoteViewModel;
 import interface_adapter.OpenNote_adapter.OpenNoteViewModel;
+import interface_adapter.OutNote_adapter.OutNoteController;
+import interface_adapter.OutNote_adapter.OutNoteViewModel;
 import interface_adapter.ViewManagerModel;
 import view.EditNoteView;
 import view.OpenNoteView;
@@ -36,25 +39,35 @@ public class Main {
         // This information will be changed by a presenter object that is reporting the
         // results from the use case. The ViewModels are observable, and will
         // be observed by the Views.
-        EditNoteViewModel loginViewModel = new EditNoteViewModel();
-        OpenNoteViewModel loggedInViewModel = new OpenNoteViewModel();
-        ClearNoteViewModel clearViewModel = new ClearNoteViewModel();
+        OpenNoteViewModel openNoteViewModel = new OpenNoteViewModel();
+        EditNoteViewModel editNoteViewModel = new EditNoteViewModel();
+        OutNoteViewModel outNoteViewModel = new OutNoteViewModel();
+        ClearNoteViewModel clearNoteViewModel = new ClearNoteViewModel();
 
-        FileUserDataAccessObject userDataAccessObject;
-        FileUserDataAccessObject userDataAccessObject1;
+        //not sure about the type and value of DAO,just to fix bugs
+        FileUserDataAccessObject openNoteUserDataAccessObject;
+        FileUserDataAccessObject editNoteUserDataAccessObject;
+        FileUserDataAccessObject outNoteUserDataAccessObject;
+        FileUserDataAccessObject clearNoteUserDataAccessObject;
+        //add delcaration for outNotecontroller
 
         try {
-            userDataAccessObject = new FileUserDataAccessObject("./users.csv", new CommonUserFactory());
-            userDataAccessObject1=userDataAccessObject;
+            openNoteUserDataAccessObject = new FileUserDataAccessObject("./users.csv", new CommonNoteFactory());
+            editNoteUserDataAccessObject=openNoteUserDataAccessObject;
+            outNoteUserDataAccessObject=openNoteUserDataAccessObject;
+            clearNoteUserDataAccessObject=openNoteUserDataAccessObject;
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
-        EditNoteView editNoteView = EditNoteUseCaseFactory.create(viewManagerModel, clearViewModel, loginViewModel, signupViewModel, userDataAccessObject,userDataAccessObject1);
+        //changed the parameters according to create method in EditNoteUseCaseFactory, not sure whether it works yet
+        EditNoteView editNoteView = EditNoteUseCaseFactory.create(viewManagerModel, editNoteViewModel, editNoteUserDataAccessObject,outNoteViewModel, outNoteUserDataAccessObject,clearNoteViewModel, clearNoteUserDataAccessObject);
         views.add(editNoteView, editNoteView.viewName);
 
-        OpenNoteView openNoteView = OpenNoteUseCaseFactory.create(viewManagerModel, loginViewModel, loggedInViewModel, userDataAccessObject);
+        OpenNoteView openNoteView = OpenNoteUseCaseFactory.create(viewManagerModel, openNoteViewModel, openNoteUserDataAccessObject);
         views.add(openNoteView, openNoteView.viewName);
+
 
 
         application.pack();
