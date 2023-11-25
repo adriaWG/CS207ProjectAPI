@@ -41,6 +41,12 @@ There are mainly two external libraries:
 
 2.org.apache.httpcomponents: httpcore
 
+3.org.apache.commons: logging
+
+4.org.apache.commons: codec
+
+3&4are not in the import part in the code, but are needed for the successful run of the code
+
 #### How to add these libs:
 1.right click at the project, open module settings
 
@@ -49,6 +55,10 @@ There are mainly two external libraries:
 3.use maven to search for the two libraries mentioned above
 
 4.Then there's no red line under "import org.apache.http..."
+
+#### a successful try of onenote api 
+the noteapi folder is a maven project. It uses the accesstoken gained by sending httprequest via postman and then we received the response successfully.
+This verifies that the api is actually usable.
 
 ## Functionality
 These are some of the key features we hope to implement:
@@ -102,4 +112,5 @@ This feature will perform real-time spell checks as users write their notes. Thi
 Users will be able to save their notes at anytime and can load their previous work when they wish to continue where they left off, enabling features like real-time data retrieval.
 
 
-
+## The Outline folder
+The outline folder contains our official code
