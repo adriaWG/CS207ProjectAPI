@@ -1,9 +1,8 @@
 package entity;
-//import org.apache.hc.client5.http.HttpEntity;
+
 import org.apache.http.HttpHeaders;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.methods.HttpPut;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -16,14 +15,14 @@ import java.io.InputStreamReader;
 public class OneNoteAPIClient {
     // OneNote API的终结点和应用程序凭据
     private static final String API_ENDPOINT = "https://graph.microsoft.com/v1.0/me/onenote/pages";
-    private static final String CLIENT_ID = "YOUR_CLIENT_ID";
-    private static final String CLIENT_SECRET = "YOUR_CLIENT_SECRET";
-    private static final String REDIRECT_URI = "YOUR_REDIRECT_URI";
+    private static final String CLIENT_ID = "a526481a-064e-477f-bc0d-54f88ef4c7b5";
+    private static final String CLIENT_SECRET = "YGA78Q~_fkY2ST-BFg_Fut0cRAjeJOSiybN.0xaBu";
+    private static final String REDIRECT_URI = "https://login.microsoftonline.com/common/oauth2/nativeclient";
     private static final String SCOPE = "https://graph.microsoft.com/.default";
 
     // 获取访问令牌的函数
     private static String getAccessToken() throws IOException {
-        String tokenUrl = "https://login.microsoftonline.com/YOUR_TENANT_ID/oauth2/v2.0/token";
+        String tokenUrl = "https://login.microsoftonline.com/83ec03fd-2dce-4eb5-a0a8-3098bfe12b57/oauth2/v2.0/token";
         HttpPost httpPost = new HttpPost(tokenUrl);
 
         // 构建请求体
@@ -69,9 +68,9 @@ public class OneNoteAPIClient {
 
             // 处理响应
             if (response.getStatusLine().getStatusCode() == 201) {
-                System.out.println("笔记创建成功！");
+                System.out.println("SUCCESS Creating Note");
             } else {
-                System.err.println("笔记创建失败：" + response.getStatusLine().getReasonPhrase());
+                System.err.println("failed to create Note: " + response.getStatusLine().getReasonPhrase());
             }
         }
     }
