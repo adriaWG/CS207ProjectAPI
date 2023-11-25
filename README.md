@@ -46,7 +46,7 @@ There are mainly two external libraries:
 
 2.click libraries,cilck the "+"
 
-3.use maven to seache for the two libraries mentioned above
+3.use maven to search for the two libraries mentioned above
 
 4.Then there's no red line under "import org.apache.http..."
 
