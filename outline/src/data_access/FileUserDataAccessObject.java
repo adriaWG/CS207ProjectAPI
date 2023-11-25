@@ -70,7 +70,8 @@ public class FileUserDataAccessObject implements OpenNoteUserDataAccessInterface
             try {
                 FileWriter writer = new FileWriter(filePath);
                 writer.close(); // 创建空文件
-                System.out.println("Empty note file created at " + filePath);
+                //TODO: delete this when finished
+                System.out.println("Note file saved at " + filePath);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -105,6 +106,10 @@ public class FileUserDataAccessObject implements OpenNoteUserDataAccessInterface
     @Override
     public boolean existsByName(String identifier) {
         return fileAccounts.containsKey(identifier);
+    }
+    @Override
+    public String getPath(String noteName){
+        return fileAccounts.get(noteName);
     }
     //add get all username
     public Set<String> getAllFileNames() {
