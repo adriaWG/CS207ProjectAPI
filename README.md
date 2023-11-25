@@ -30,11 +30,11 @@ spelling check API:
 https://github.com/languagetool-org/languagetool
 
 ### Have access to the onenote api
-We created a sandbox which contains some virtual accounts of mircosoft in Microsoft Azure and created out own app CSC207note to have access to the onenote api.
+We created a sandbox which contains some virtual accounts of mircosoft in Microsoft Azure and created our own app CSC207note to have access to the onenote api.
 <img width="1062" alt="3d43431a3e81531edb62b9a59648ec8" src="https://github.com/adriaWG/CS207ProjectAPI/assets/106577956/34113e95-3251-47c0-b73e-d0dcd04f31a1">
 
 #### Run the code using api
-To use the api in the code, we download maven to add dependency to the project.
+To use the api in the code, we download Maven to add dependency to the project.
 There are mainly two external libraries:
 
 1.org.apache.httpcomponents: httpclient
@@ -44,7 +44,7 @@ There are mainly two external libraries:
 #### How to add these libs:
 1.right click at the project, open module settings
 
-2.click libraries,cilck the "+"
+2.click libraries, click the "+"
 
 3.use maven to search for the two libraries mentioned above
 
