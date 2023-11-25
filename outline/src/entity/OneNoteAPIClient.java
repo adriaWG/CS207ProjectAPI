@@ -70,7 +70,7 @@ public class OneNoteAPIClient {
             if (response.getStatusLine().getStatusCode() == 201) {
                 System.out.println("SUCCESS Creating Note");
             } else {
-                System.err.println("failed to created" + response.getStatusLine().getReasonPhrase());
+                System.err.println("failed to create Note: " + response.getStatusLine().getReasonPhrase());
             }
         }
     }
