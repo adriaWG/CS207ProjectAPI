@@ -99,6 +99,12 @@ public class OpenNoteView extends JPanel implements ActionListener, PropertyChan
                     public void keyReleased(KeyEvent e) {
                     }
                 });
+
+        this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+
+        this.add(title);
+        this.add(filenameInfo);
+        this.add(buttons);
 }
 
 

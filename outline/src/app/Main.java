@@ -61,11 +61,15 @@ public class Main {
         }
 
         //changed the parameters according to create method in EditNoteUseCaseFactory, not sure whether it works yet
+        OpenNoteView openNoteView = OpenNoteUseCaseFactory.create(viewManagerModel, openNoteViewModel, openNoteUserDataAccessObject);
+        views.add(openNoteView, openNoteView.viewName);
+
         EditNoteView editNoteView = EditNoteUseCaseFactory.create(viewManagerModel, editNoteViewModel, editNoteUserDataAccessObject,outNoteViewModel, outNoteUserDataAccessObject,clearNoteViewModel, clearNoteUserDataAccessObject);
         views.add(editNoteView, editNoteView.viewName);
 
-        OpenNoteView openNoteView = OpenNoteUseCaseFactory.create(viewManagerModel, openNoteViewModel, openNoteUserDataAccessObject);
-        views.add(openNoteView, openNoteView.viewName);
+        viewManagerModel.setActiveView(openNoteView.viewName);
+        viewManagerModel.firePropertyChanged();
+
 
 
 
