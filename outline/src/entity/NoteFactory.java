@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 public interface NoteFactory {
 
-    Note create(String filename, String filepath,String content);
+    Note create(String noteName, String notePath,String content);
 
     Note addText(Note note, String text);
 }
