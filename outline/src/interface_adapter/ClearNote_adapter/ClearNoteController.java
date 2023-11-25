@@ -13,6 +13,6 @@ public class ClearNoteController {
     }
 
     public void execute() {
-        ClearNoteInteractor.execute();
+        ClearNoteInteractor.deleteAllNote();
     }
 }

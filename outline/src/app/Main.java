@@ -49,7 +49,6 @@ public class Main {
         FileUserDataAccessObject editNoteUserDataAccessObject;
         FileUserDataAccessObject outNoteUserDataAccessObject;
         FileUserDataAccessObject clearNoteUserDataAccessObject;
-        //add delcaration for outNotecontroller
 
         try {
             openNoteUserDataAccessObject = new FileUserDataAccessObject("./users.csv", new CommonNoteFactory());

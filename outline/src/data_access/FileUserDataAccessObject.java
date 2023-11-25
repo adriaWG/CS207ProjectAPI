@@ -102,7 +102,13 @@ public class FileUserDataAccessObject implements OpenNoteUserDataAccessInterface
             System.out.println("File does not exist at the given path.");
         }
     }
-    public void deleteAllNote(Set<String> noteNames) {
+
+    private Set<String> getAllNoteNames() {
+        return fileAccounts.keySet();
+    }
+
+    public void deleteAllNote() {
+        Set<String> noteNames = getAllNoteNames();
         Iterator<String> iterator = noteNames.iterator();
         while (iterator.hasNext()) {
             String noteName = iterator.next();
