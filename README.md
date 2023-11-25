@@ -41,6 +41,12 @@ There are mainly two external libraries:
 
 2.org.apache.httpcomponents: httpcore
 
+3.org.apache.commons: logging
+
+4.org.apache.commons: codec
+
+3&4are not in the import part in the code, but are needed for the successful run of the code
+
 #### How to add these libs:
 1.right click at the project, open module settings
 
