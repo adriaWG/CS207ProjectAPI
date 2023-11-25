@@ -37,6 +37,8 @@ public class FileUserDataAccessObject implements OpenNoteUserDataAccessInterface
 
                 // For later: clean this up by creating a new Exception subclass and handling it in the UI.
                 assert header.equals("noteName,notePath");
+                headers.put("noteName", 0);
+                headers.put("notePath", 1);
 
                 String row;
                 while ((row = reader.readLine()) != null) {
@@ -45,6 +47,7 @@ public class FileUserDataAccessObject implements OpenNoteUserDataAccessInterface
                     String notePath = String.valueOf(col[headers.get("notePath")]);
                     String content = null; //when you first create a file it would be null
                     Note note = noteFactory.create(noteName, notePath, content);
+
                     fileAccounts.put(noteName, notePath);
                 }
             }
@@ -52,8 +55,30 @@ public class FileUserDataAccessObject implements OpenNoteUserDataAccessInterface
     }
 
     //function of saving file
+    public void saveToTxt(Note note) {
+        String filePath = note.getNotePath();
+        String fileContent = note.getContent();
+        if (fileContent != null && !fileContent.isEmpty()) {
+            try (FileWriter writer = new FileWriter(filePath)) {
+                writer.write(fileContent);
+                System.out.println("Note saved to " + filePath);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            // 如果内容为空，创建一个空的txt文件
+            try {
+                FileWriter writer = new FileWriter(filePath);
+                writer.close(); // 创建空文件
+                System.out.println("Empty note file created at " + filePath);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
     @Override
     public void saveNote(Note note) {
+        saveToTxt(note);
         fileAccounts.put(note.getNoteName(), note.getNotePath());
         this.saveFileAccounts();
     }

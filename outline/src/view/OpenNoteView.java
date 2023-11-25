@@ -56,7 +56,6 @@ public class OpenNoteView extends JPanel implements ActionListener, PropertyChan
                     public void actionPerformed(ActionEvent evt) {
                         if (evt.getSource().equals(open)) {
                             OpenNoteState currentState = openNoteViewModel.getState();
-                            //TODO Open Note view 1: finish this
                             openNoteController.openNote(currentState.getNoteId());
                         }
                     }
@@ -68,8 +67,8 @@ public class OpenNoteView extends JPanel implements ActionListener, PropertyChan
                     public void actionPerformed(ActionEvent evt) {
                         if (evt.getSource().equals(new_file)) {
                             OpenNoteState currentState = openNoteViewModel.getState();
-                            //TODO Open Note view 2: check how to make this possible
-                            openNoteController.openNote(currentState.getNoteId());
+                            openNoteController.newNote(currentState.getNoteId());
+
                         }
                     }
                 }

@@ -4,7 +4,6 @@ import entity.CommonNoteFactory;
 import entity.NoteFactory;
 import interface_adapter.OpenNote_adapter.OpenNoteController;
 import interface_adapter.OpenNote_adapter.OpenNotePresenter;
-import interface_adapter.OpenNote_adapter.OpenNoteState;
 import interface_adapter.OpenNote_adapter.OpenNoteViewModel;
 import interface_adapter.ViewManagerModel;
 import use_case.OpenNote_case.OpenNoteInputBoundary;
@@ -15,8 +14,6 @@ import view.OpenNoteView;
 
 import javax.swing.*;
 import java.io.IOException;
-
-import static java.lang.System.*;
 
 public class OpenNoteUseCaseFactory {
     /** Prevent instantiation. */
@@ -42,7 +39,7 @@ public class OpenNoteUseCaseFactory {
 
         OpenNoteOutputBoundary openNoteOutputBoundary = new OpenNotePresenter(viewManagerModel, openNoteViewModel);
         NoteFactory userFactory = new CommonNoteFactory();
-        OpenNoteInputBoundary openNoteInteractor = new OpenNoteInteractor(openNoteUserDataAccessObject, openNoteOutputBoundary);
+        OpenNoteInputBoundary openNoteInteractor = new OpenNoteInteractor(openNoteUserDataAccessObject, openNoteOutputBoundary, userFactory);
 
         return new OpenNoteController(openNoteInteractor);
 
