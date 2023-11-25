@@ -30,5 +30,9 @@ public class OpenNotePresenter implements OpenNoteOutputBoundary{
     }
     @Override
     public void prepareFailView(String error) {
+        OpenNoteState openNoteState = openNoteViewModel.getState();
+        openNoteState.setNoteId(error);
+        openNoteViewModel.firePropertyChanged();
+
     }
 }

@@ -42,7 +42,20 @@ public class OpenNoteInteractor implements OpenNoteInputBoundary {
 
     @Override //some kind of execute that deal with outNote InputData
     public void openNote(OpenNoteInputData openNoteInputData) {
+        String title = openNoteInputData.getTitle();
+        if (!noteDataAccessObject.existsByName(openNoteInputData.getTitle())) {
+            openNotePresenter.prepareFailView("Note name not found.");
+        } else {
+            System.out.println("note opening");
 
+            String path = noteDataAccessObject.getPath(title);
+            System.out.println(path);
+            Note note = notefactory.create(openNoteInputData.getTitle(),path, null);
+            noteDataAccessObject.saveNote(note);
+
+            OpenNoteOutputData openNoteOutputData = new OpenNoteOutputData(note.getNoteName(), note.getContent(), false);
+            openNotePresenter.prepareSuccessView(openNoteOutputData);
+        }
 
     }
 
