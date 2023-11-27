@@ -7,6 +7,8 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.beans.PropertyChangeListener;
 
+import interface_adapter.EditNote_adapter.EditNoteController;
+import interface_adapter.EditNote_adapter.EditNoteViewModel;
 import interface_adapter.OpenNote_adapter.OpenNoteController;
 import interface_adapter.OpenNote_adapter.OpenNoteState;
 import interface_adapter.OpenNote_adapter.OpenNoteViewModel;
@@ -27,12 +29,17 @@ public class OpenNoteView extends JPanel implements ActionListener, PropertyChan
     private final JButton cancel;
     private final JButton new_file;
     private final OpenNoteController openNoteController;
+    private final EditNoteViewModel editNoteViewModel;
+    private final EditNoteController editNoteController;
 
 
-    public OpenNoteView(OpenNoteViewModel openNoteViewModel, OpenNoteController controller) {
+    public OpenNoteView(OpenNoteViewModel openNoteViewModel, OpenNoteController controller, EditNoteViewModel editNoteViewModel, EditNoteController editNoteController) {
 
         this.openNoteController = controller;
         this.openNoteViewModel = openNoteViewModel;
+        this.editNoteViewModel = editNoteViewModel;
+        this.editNoteController = editNoteController;
+
         this.openNoteViewModel.addPropertyChangeListener(this);
 
         JLabel title = new JLabel("Open Note View");

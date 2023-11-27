@@ -51,7 +51,7 @@ public class EditNoteUseCaseFactory {
         return null;
     }
 
-    private static EditNoteController createEditNoteUseCase(
+    public static EditNoteController createEditNoteUseCase(
             ViewManagerModel viewManagerModel,
             EditNoteViewModel editNoteViewModel,
             EditNoteUserDataAccessInterface editNoteDataAccessObject) throws IOException {
