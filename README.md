@@ -29,12 +29,12 @@ https://ddownload.com/api
 spelling check API:
 https://github.com/languagetool-org/languagetool
 
-### Have access to the onenote api
-We created a sandbox which contains some virtual accounts of mircosoft in Microsoft Azure and created our own app CSC207note to have access to the onenote api.
+### Have access to the OneNote API
+We created a sandbox which contains some virtual accounts of Microsoft in Microsoft Azure and created our own app CSC207note to have access to the onenote api.
 <img width="1062" alt="3d43431a3e81531edb62b9a59648ec8" src="https://github.com/adriaWG/CS207ProjectAPI/assets/106577956/34113e95-3251-47c0-b73e-d0dcd04f31a1">
 
-#### Run the code using api
-To use the api in the code, we download Maven to add dependency to the project.
+#### Run the code using API
+To use the API in the code, we download Maven to add dependency to the project.
 There are mainly two external libraries:
 
 1.org.apache.httpcomponents: httpclient
@@ -45,20 +45,20 @@ There are mainly two external libraries:
 
 4.org.apache.commons: codec
 
-3&4are not in the import part in the code, but are needed for the successful run of the code
+3 & 4 are not in the import part of the code, but are needed to successfully run of the code
 
 #### How to add these libs:
 1.right click at the project, open module settings
 
 2.click libraries, click the "+"
 
-3.use maven to search for the two libraries mentioned above
+3.use Maven to search for the two libraries mentioned above
 
 4.Then there's no red line under "import org.apache.http..."
 
-#### a successful try of onenote api 
-the noteapi folder is a maven project. It uses the accesstoken gained by sending httprequest via postman and then we received the response successfully.
-This verifies that the api is actually usable.
+#### A successful try of Onenote API
+The noteapi folder is a Maven project. It uses the accesstoken gained by sending httprequest via postman, and then we received the response successfully.
+This verifies that the API is usable.
 
 ## Functionality
 These are some of the key features we hope to implement:
@@ -85,13 +85,14 @@ Users can export their notes to their desired output file type (e.g. pdf)
 Users can delete their notes if they decided that they will no longer need it.
 
 ### SOLID 
-Our implementation adheres to SOLID 
+Our implementation adheres to SOLID principles
 ### Clean Architecture
 Our implementation adheres to CLean Architecture
 ### Design Patterns
 
 ## Demo
-Insert screenshots of our finished code 
+Insert screenshots of our completed code 
+Insert video demo of completed code
 
 ## Testing
 Our test folder shows our testings to specific parts of the project.
@@ -112,5 +113,5 @@ This feature will perform real-time spell checks as users write their notes. Thi
 Users will be able to save their notes at anytime and can load their previous work when they wish to continue where they left off, enabling features like real-time data retrieval.
 
 
-## The Outline folder
+## Remarks
 The outline folder contains our official code
