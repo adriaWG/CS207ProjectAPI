@@ -37,11 +37,11 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
     private final ClearNoteController clearNoteController;
 
 
-    public EditNoteView(EditNoteViewModel editNoteViewModel, EditNoteController editNoteController,
+    public EditNoteView(EditNoteViewModel editNoteViewModel, EditNoteController editController,
                         OutNoteController outNoteController,OutNoteViewModel outNoteViewModel,
                         ClearNoteController clearNoteController, ClearNoteViewModel clearNoteViewModel) {
 
-        this.editNoteController = editNoteController;
+        this.editNoteController = editController;
         this.editNoteViewModel = editNoteViewModel;
         this.outNoteController = outNoteController;
         this.outNoteViewModel = outNoteViewModel;
@@ -58,7 +58,7 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
                 new JLabel("Filename"), filenameInputField);
 
         JPanel buttons = new JPanel();
-        edit = new JButton(editNoteViewModel.EDIT_BUTTON_LABEL);
+        edit = new JButton(editNoteViewModel.SAVE_BUTTON_LABEL);
         buttons.add(edit);
         cancel = new JButton(editNoteViewModel.CANCEL_BUTTON_LABEL);
         buttons.add(cancel);

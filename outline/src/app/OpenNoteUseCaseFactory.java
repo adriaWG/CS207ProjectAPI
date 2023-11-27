@@ -28,12 +28,11 @@ public class OpenNoteUseCaseFactory {
             ViewManagerModel viewManagerModel,
             OpenNoteViewModel openNoteViewModel,
             EditNoteViewModel editNoteViewModel,
-            OpenNoteUserDataAccessInterface openNoteUserDataAccessObject,
-            EditNoteUserDataAccessInterface editNoteDataAccessObject){
+            OpenNoteUserDataAccessInterface openNoteUserDataAccessObject
+            ){
         try{
             OpenNoteController openNoteController = createOpenNoteUseCase(viewManagerModel, openNoteViewModel, editNoteViewModel,openNoteUserDataAccessObject);
-            EditNoteController editNoteController = createEditNoteUseCase(viewManagerModel,editNoteViewModel, editNoteDataAccessObject);
-            return new OpenNoteView(openNoteViewModel, openNoteController,editNoteViewModel,editNoteController);
+            return new OpenNoteView(openNoteViewModel, openNoteController);
         } catch(IOException e){
             JOptionPane.showMessageDialog(null, "Could not open file.");
         }

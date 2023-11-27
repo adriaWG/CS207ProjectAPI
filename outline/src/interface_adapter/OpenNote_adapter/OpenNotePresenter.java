@@ -36,8 +36,8 @@ public class OpenNotePresenter implements OpenNoteOutputBoundary{
 
         this.editNoteViewModel.firePropertyChanged();
 
-        viewManagerModel.setActiveView(editNoteViewModel.getViewName());
-        viewManagerModel.firePropertyChanged();
+        this.viewManagerModel.setActiveView(editNoteViewModel.getViewName());
+        this.viewManagerModel.firePropertyChanged();
 
         System.out.println(editNoteViewModel.getViewName());
     }

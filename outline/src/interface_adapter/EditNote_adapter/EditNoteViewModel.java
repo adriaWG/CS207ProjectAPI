@@ -6,11 +6,11 @@ import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
 public class EditNoteViewModel extends ViewModel {
-    public final String EDIT_BUTTON_LABEL = "Edit Note View";
+    public final String TITLE_LABEL = "Edit Note View";
     public final String USERNAME_LABEL = "Enter username";
 
     //buttons that we need on edit note
-    //public static final String LOGIN_BUTTON_LABEL = "Log in";
+    public static final String SAVE_BUTTON_LABEL = "Save";
     public static final String CANCEL_BUTTON_LABEL = "Cancel";
     private EditNoteState state = new EditNoteState();
 

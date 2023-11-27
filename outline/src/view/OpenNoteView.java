@@ -29,16 +29,14 @@ public class OpenNoteView extends JPanel implements ActionListener, PropertyChan
     private final JButton cancel;
     private final JButton new_file;
     private final OpenNoteController openNoteController;
-    private final EditNoteViewModel editNoteViewModel;
-    private final EditNoteController editNoteController;
 
 
-    public OpenNoteView(OpenNoteViewModel openNoteViewModel, OpenNoteController controller, EditNoteViewModel editNoteViewModel, EditNoteController editNoteController) {
+
+    public OpenNoteView(OpenNoteViewModel openNoteViewModel, OpenNoteController controller) {
 
         this.openNoteController = controller;
         this.openNoteViewModel = openNoteViewModel;
-        this.editNoteViewModel = editNoteViewModel;
-        this.editNoteController = editNoteController;
+
 
         this.openNoteViewModel.addPropertyChangeListener(this);
 
@@ -64,6 +62,7 @@ public class OpenNoteView extends JPanel implements ActionListener, PropertyChan
                         if (evt.getSource().equals(open)) {
                             OpenNoteState currentState = openNoteViewModel.getState();
                             openNoteController.openNote(currentState.getNoteId());
+
                         }
                     }
                 }
