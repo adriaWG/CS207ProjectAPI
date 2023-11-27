@@ -22,19 +22,19 @@ public class OpenNotePresenter implements OpenNoteOutputBoundary{
 
     @Override
     public void prepareSuccessView(OpenNoteOutputData response) {
-        OpenNoteState openNoteState = openNoteViewModel.getState();
+//        OpenNoteState openNoteState = openNoteViewModel.getState();
         EditNoteState editNoteState = editNoteViewModel.getState();
 
-        openNoteState.setNoteId(response.getNoteId());
-        openNoteState.setMessage(response.getMessage());
+//        openNoteState.setNoteId(response.getNoteId());
+//        openNoteState.setMessage(response.getMessage());
 
         editNoteState.setFilename(response.getNoteId());
 //        editNoteState.setFilePath(response.getFilename());
-        this.openNoteViewModel.setState(openNoteState);
+
+//        this.openNoteViewModel.setState(openNoteState);
         this.editNoteViewModel.setState(editNoteState);
 
-        this.openNoteViewModel.firePropertyChanged();
-        editNoteViewModel.firePropertyChanged();
+        this.editNoteViewModel.firePropertyChanged();
 
         viewManagerModel.setActiveView(editNoteViewModel.getViewName());
         viewManagerModel.firePropertyChanged();
