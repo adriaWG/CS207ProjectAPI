@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="updated test">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_httpcomponents_httpcore.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/eclipse_ecf_apache_httpcomponents_httpclient.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hi.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-11-13,_9_44 a_m__[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-11-13,_9_53 a_m__[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-12,_7_33 p_m__[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-12__7_33p_m___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="ui for EditTest">
+      <change afterPath="$PROJECT_DIR$/outline/users.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/outline.iml" beforeDir="false" afterPath="$PROJECT_DIR$/outline/outline.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week5ca/src/interface_adapter/signup/SignupViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/week5ca/src/interface_adapter/signup/SignupViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/test/ClearTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/ClearTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/test/OpenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/OpenTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +23,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="REBASE" />
+      </set>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -39,6 +37,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -67,7 +66,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/ASUS/IdeaProjects/yauyik/CS207ProjectAPI",
+    "last_opened_file_path": "/Users/emilytieu/IdeaProjects/CS207ProjectAPI/outline/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -82,11 +81,47 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/outline/test" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="use_case.ClearNote_case" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ClearTest.testClearNote">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.Main" />
+      <module name="outline" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClearTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="outline" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClearTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClearTest.testClearNote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="outline" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClearTest" />
+      <option name="METHOD_NAME" value="testClearNote" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OpenTest.testOpenView" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="outline" />
       <option name="PACKAGE_NAME" value="" />
@@ -99,6 +134,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClearTest.testClearNote" />
+        <item itemvalue="JUnit.ClearTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.OpenTest.testOpenView" />
       </list>
     </recent_temporary>
@@ -256,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701053321134</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ui for EditTest">
+      <option name="closed" value="true" />
+      <created>1701098543639</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701098543639</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +337,8 @@
     <MESSAGE value="added testing files" />
     <MESSAGE value="updated README.md" />
     <MESSAGE value="updated test" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated test" />
+    <MESSAGE value="ui for EditTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="ui for EditTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
