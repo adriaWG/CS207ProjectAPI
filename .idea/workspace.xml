@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="clearNote interface_adapter">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-11-13__10_04a_m___Changes_.xml" beforeDir="false" />
+    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="updated test">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_httpcomponents_httpcore.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/eclipse_ecf_apache_httpcomponents_httpclient.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hi.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-11-13,_9_44 a_m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-11-13,_9_53 a_m__[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-12,_7_33 p_m__[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-11-12__7_33p_m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/app/EditNoteUseCaseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/app/EditNoteUseCaseFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/outline.iml" beforeDir="false" afterPath="$PROJECT_DIR$/outline/outline.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week5ca/src/interface_adapter/signup/SignupViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/week5ca/src/interface_adapter/signup/SignupViewModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,32 +54,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/IdeaProjects/yauyik/CS207ProjectAPI&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;E:/Codes/software design/Project/noteapi/src/main/java/graphapi.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "C:/Users/ASUS/IdeaProjects/yauyik/CS207ProjectAPI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "E:/Codes/software design/Project/noteapi/src/main/java/graphapi.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="use_case.ClearNote_case" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="OpenTest.testOpenView" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="outline" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OpenTest" />
+      <option name="METHOD_NAME" value="testOpenView" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OpenTest.testOpenView" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,6 +117,8 @@
       <workItem from="1698672660370" duration="605000" />
       <workItem from="1699427555609" duration="459000" />
       <workItem from="1699509181081" duration="1741000" />
+      <workItem from="1700510627982" duration="1727000" />
+      <workItem from="1700691326679" duration="21138000" />
     </task>
     <task id="LOCAL-00001" summary="add folders">
       <option name="closed" value="true" />
@@ -169,7 +200,63 @@
       <option name="project" value="LOCAL" />
       <updated>1700491232075</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="edited EditNoteView.java">
+      <option name="closed" value="true" />
+      <created>1700506698847</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700506698847</updated>
+    </task>
+    <task id="LOCAL-00012" summary="edited EditNoteController.java name">
+      <option name="closed" value="true" />
+      <created>1700511359835</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700511359835</updated>
+    </task>
+    <task id="LOCAL-00013" summary="edited EditNoteView.java name">
+      <option name="closed" value="true" />
+      <created>1700691477881</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1700691477881</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added testing files">
+      <option name="closed" value="true" />
+      <created>1700940429582</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1700940429582</updated>
+    </task>
+    <task id="LOCAL-00015" summary="updated README.md">
+      <option name="closed" value="true" />
+      <created>1700943325761</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1700943325761</updated>
+    </task>
+    <task id="LOCAL-00016" summary="updated README.md">
+      <option name="closed" value="true" />
+      <created>1701052300530</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701052300530</updated>
+    </task>
+    <task id="LOCAL-00017" summary="updated test">
+      <option name="closed" value="true" />
+      <created>1701053321134</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701053321134</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +274,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add folders" />
     <MESSAGE value="spelling mistake in README.md" />
     <MESSAGE value="deleted not useful folders" />
@@ -197,7 +285,13 @@
     <MESSAGE value="created OpenNotePresenter.java for interface adapter" />
     <MESSAGE value="OpenNoteViewModel.java" />
     <MESSAGE value="clearNote interface_adapter" />
-    <option name="LAST_COMMIT_MESSAGE" value="clearNote interface_adapter" />
+    <MESSAGE value="edited EditNoteView.java" />
+    <MESSAGE value="edited EditNoteController.java name" />
+    <MESSAGE value="edited EditNoteView.java name" />
+    <MESSAGE value="added testing files" />
+    <MESSAGE value="updated README.md" />
+    <MESSAGE value="updated test" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
