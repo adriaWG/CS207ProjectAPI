@@ -21,7 +21,7 @@ public class OpenNoteInteractor implements OpenNoteInputBoundary {
     @Override //some kind of execute that deal with outNote InputData
     public void createNote(OpenNoteInputData openNoteInputData) {
         String title = openNoteInputData.getTitle();
-        if (noteDataAccessObject.existsByName(openNoteInputData.getTitle())) {
+        if (noteDataAccessObject.existsByName(title) ){
             openNotePresenter.prepareFailView("Note name already exists.");
         } else {
             System.out.println("note creating");

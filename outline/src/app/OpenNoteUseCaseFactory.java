@@ -2,6 +2,7 @@ package app;
 
 import entity.CommonNoteFactory;
 import entity.NoteFactory;
+import interface_adapter.EditNote_adapter.EditNoteViewModel;
 import interface_adapter.OpenNote_adapter.OpenNoteController;
 import interface_adapter.OpenNote_adapter.OpenNotePresenter;
 import interface_adapter.OpenNote_adapter.OpenNoteViewModel;
@@ -22,9 +23,10 @@ public class OpenNoteUseCaseFactory {
     public static OpenNoteView create(
             ViewManagerModel viewManagerModel,
             OpenNoteViewModel openNoteViewModel,
+            EditNoteViewModel editNoteViewModel,
             OpenNoteUserDataAccessInterface openNoteUserDataAccessObject){
         try{
-            OpenNoteController openNoteController = createOpenNoteUseCase(viewManagerModel, openNoteViewModel, openNoteUserDataAccessObject);
+            OpenNoteController openNoteController = createOpenNoteUseCase(viewManagerModel, openNoteViewModel, editNoteViewModel,openNoteUserDataAccessObject);
             return new OpenNoteView(openNoteViewModel, openNoteController);
         } catch(IOException e){
             JOptionPane.showMessageDialog(null, "Could not open file.");
@@ -35,9 +37,10 @@ public class OpenNoteUseCaseFactory {
     private static OpenNoteController createOpenNoteUseCase(
             ViewManagerModel viewManagerModel,
             OpenNoteViewModel openNoteViewModel,
+            EditNoteViewModel editNoteViewModel,
             OpenNoteUserDataAccessInterface openNoteUserDataAccessObject) throws IOException{
 
-        OpenNoteOutputBoundary openNoteOutputBoundary = new OpenNotePresenter(viewManagerModel, openNoteViewModel);
+        OpenNoteOutputBoundary openNoteOutputBoundary = new OpenNotePresenter(viewManagerModel, openNoteViewModel,editNoteViewModel);
         NoteFactory userFactory = new CommonNoteFactory();
         OpenNoteInputBoundary openNoteInteractor = new OpenNoteInteractor(openNoteUserDataAccessObject, openNoteOutputBoundary, userFactory);
 

@@ -115,7 +115,9 @@ public class OpenNoteView extends JPanel implements ActionListener, PropertyChan
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
         OpenNoteState state = (OpenNoteState) evt.getNewValue();
+
         if (state.getNoteIdError() != null) {
+            System.out.println(state.getNoteIdError());
             JOptionPane.showMessageDialog(this, state.getNoteIdError());
         }
     }
