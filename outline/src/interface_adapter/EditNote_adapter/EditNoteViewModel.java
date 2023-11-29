@@ -2,6 +2,7 @@ package interface_adapter.EditNote_adapter;
 
 import interface_adapter.ViewModel;
 
+import javax.swing.*;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
@@ -36,5 +37,9 @@ public class EditNoteViewModel extends ViewModel {
 
     public EditNoteState getState() {
         return state;
+    }
+
+    public void printSuccess(){
+        JOptionPane.showMessageDialog(null, "File successfully saved!");
     }
 }
