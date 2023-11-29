@@ -24,8 +24,8 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
     private final EditNoteViewModel editNoteViewModel;
     private final OutNoteViewModel outNoteViewModel;
     private final ClearNoteViewModel clearNoteViewModel;
-
-    final JTextField filenameInputField = new JTextField(15);
+    private String existingText = "example:";
+    final JTextArea textArea = new JTextArea(existingText, 10, 30);
     private final JLabel filenameErrorField = new JLabel();
 
     private final JButton edit;
@@ -55,8 +55,7 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
         JLabel title = new JLabel("Edit Note View");
         title.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        LabelTextPanel filenameInfo = new LabelTextPanel(
-                new JLabel("Filename"), filenameInputField);
+
 
         JPanel buttons = new JPanel();
         edit = new JButton(editNoteViewModel.SAVE_BUTTON_LABEL);
@@ -105,7 +104,7 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
         this.add(title);
-        this.add(filenameInfo);
+        this.add(textArea);
         this.add(buttons);
 
 }
