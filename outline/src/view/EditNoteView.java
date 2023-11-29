@@ -20,12 +20,12 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 public class EditNoteView extends JPanel implements ActionListener, PropertyChangeListener {
-    public final String viewName="Edit Note";
+    public final String viewName="edit note";
     private final EditNoteViewModel editNoteViewModel;
     private final OutNoteViewModel outNoteViewModel;
     private final ClearNoteViewModel clearNoteViewModel;
 
-    final JTextField filenameInputField = new JTextField(100);
+    final JTextField filenameInputField = new JTextField(15);
     private final JLabel filenameErrorField = new JLabel();
 
     private final JButton edit;
@@ -43,6 +43,7 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
 
         this.editNoteController = editController;
         this.editNoteViewModel = editNoteViewModel;
+
         this.outNoteController = outNoteController;
         this.outNoteViewModel = outNoteViewModel;
         this.clearNoteController=clearNoteController;

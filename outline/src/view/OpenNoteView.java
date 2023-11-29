@@ -22,7 +22,7 @@ public class OpenNoteView extends JPanel implements ActionListener, PropertyChan
     public final String viewName="Open Note";
     private final OpenNoteViewModel openNoteViewModel;
 
-    final JTextField filenameInputField = new JTextField(100);
+    final JTextField filenameInputField = new JTextField(20);
     private final JLabel filenameErrorField = new JLabel();
 
     private final JButton open;
