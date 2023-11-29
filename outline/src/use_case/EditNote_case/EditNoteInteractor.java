@@ -1,5 +1,6 @@
 package use_case.EditNote_case;
 
+import entity.Note;
 import interface_adapter.EditNote_adapter.EditNoteViewModel;
 import interface_adapter.ViewManagerModel;
 
@@ -14,9 +15,14 @@ public class EditNoteInteractor implements EditNoteInputBoundary {
         this.editNotePresenter = editNoteOutputBoundary;
     }
 
-    @Override //some kind of execute that deal with editNote InputData
+    @Override
     public void edit(EditNoteInputData editNoteInputData) {
-        String filename = editNoteInputData.getFilename();
-        //TODO: edit 2. add API for editNote
+        Note note = editNoteInputData.getNote();
+        note.addContent(editNoteInputData.getScreenText());
+        System.out.println(note.getContent());
+        noteDataAccessObject.saveNote(note);
+
+        EditNoteOutputData editNoteOutputData = new EditNoteOutputData(note.getNoteName(), false);
+        editNotePresenter.prepareSuccessView(editNoteOutputData);
     }
 }

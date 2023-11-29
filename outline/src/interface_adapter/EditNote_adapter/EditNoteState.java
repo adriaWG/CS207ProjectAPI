@@ -34,6 +34,8 @@ public class EditNoteState {
     public void setCurrentNote(Note note){
         this.currentNote=note;
     }
+
+    public Note getCurrentNote(){return this.currentNote;}
     public String getCurrentNoteContent(){
         return currentNote.getContent();
     }

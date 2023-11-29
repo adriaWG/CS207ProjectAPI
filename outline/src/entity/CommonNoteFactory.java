@@ -35,6 +35,6 @@ public class CommonNoteFactory implements NoteFactory{
     @Override
     public Note addText(Note note,String text) {
         note.addContent(text);
-        return null;
+        return note;
     }
 }

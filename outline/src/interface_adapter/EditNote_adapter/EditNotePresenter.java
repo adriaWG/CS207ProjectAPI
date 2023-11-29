@@ -16,7 +16,6 @@ public class EditNotePresenter implements EditNoteOutputBoundary {
 
     @Override
     public void prepareSuccessView(EditNoteOutputData response) {
-        // On success, switch to the logged in view.
 
         EditNoteState editNoteState = editNoteViewModel.getState();
         editNoteState.setFilename(response.getFilename());

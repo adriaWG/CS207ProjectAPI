@@ -17,7 +17,7 @@ public class CommonNote implements Note {
 
     @Override
     public void addContent(String newContent){
-        this.content += newContent;
+        this.content = newContent;
     }
 }
 

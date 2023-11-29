@@ -72,7 +72,7 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
                     public void actionPerformed(ActionEvent evt) {
                         if (evt.getSource().equals(edit)) {
                             EditNoteState currentState = editNoteViewModel.getState();
-                            editNoteController.editNote(currentState.getFilename());
+                            editNoteController.editNote(currentState.getFilename(),currentState.getCurrentNote(),textArea.getText());
                         }
                     }
                 }
@@ -85,7 +85,7 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
                     public void actionPerformed(ActionEvent evt) {
                         if (evt.getSource().equals(clear)) {
                             EditNoteState currentState = editNoteViewModel.getState();
-                            editNoteController.editNote(currentState.getFilename());
+                            editNoteController.editNote(currentState.getFilename(),currentState.getCurrentNote(),textArea.getText());
                         }
                     }
                 }
@@ -96,7 +96,7 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
                     public void actionPerformed(ActionEvent evt) {
                         if (evt.getSource().equals(export)) {
                             EditNoteState currentState = editNoteViewModel.getState();
-                            editNoteController.editNote(currentState.getFilename());
+                            editNoteController.editNote(currentState.getFilename(),currentState.getCurrentNote(),textArea.getText());
                         }
                     }
                 }
