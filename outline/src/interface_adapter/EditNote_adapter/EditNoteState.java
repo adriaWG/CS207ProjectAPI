@@ -1,11 +1,16 @@
 package interface_adapter.EditNote_adapter;
 
+import entity.Note;
+
 public class EditNoteState {
     private String filename = "";
     private String filenameError = null;
+
+    private Note currentNote;
     public EditNoteState(EditNoteState copy) {
         filename = copy.filename;
         filenameError = copy.filenameError;
+        currentNote = copy.currentNote;
 
     }
     // Because of the previous copy constructor, the default constructor must be explicit.
@@ -23,6 +28,14 @@ public class EditNoteState {
     }
     public void setFilenameError(String filename) {
         this.filename = filename;
+    }
+
+
+    public void setCurrentNote(Note note){
+        this.currentNote=note;
+    }
+    public String getCurrentNoteContent(){
+        return currentNote.getContent();
     }
 
 }

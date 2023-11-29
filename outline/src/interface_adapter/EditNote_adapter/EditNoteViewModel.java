@@ -7,7 +7,7 @@ import java.beans.PropertyChangeSupport;
 
 public class EditNoteViewModel extends ViewModel {
     public final String TITLE_LABEL = "Edit Note View";
-    public final String USERNAME_LABEL = "Enter username";
+
 
     //buttons that we need on edit note
     public static final String SAVE_BUTTON_LABEL = "Save";

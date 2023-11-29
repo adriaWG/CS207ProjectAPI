@@ -25,13 +25,12 @@ public class OpenNotePresenter implements OpenNoteOutputBoundary{
 
         EditNoteState editNoteState = editNoteViewModel.getState();
         editNoteState.setFilename(response.getNoteId());
-        System.out.println(editNoteState.getFilename());
+        editNoteState.setCurrentNote(response.getNote());
 
         this.editNoteViewModel.setState(editNoteState);
         this.editNoteViewModel.firePropertyChanged();
 
         this.viewManagerModel.setActiveView(editNoteViewModel.getViewName());
-        System.out.println(editNoteViewModel.getViewName());
         this.viewManagerModel.firePropertyChanged();
 
 
@@ -39,7 +38,6 @@ public class OpenNotePresenter implements OpenNoteOutputBoundary{
     @Override
     public void prepareFailView(String error) {
         OpenNoteState openNoteState = openNoteViewModel.getState();
-        System.out.println("Error");
         openNoteState.setNoteIdError(error);
         openNoteViewModel.firePropertyChanged();
 

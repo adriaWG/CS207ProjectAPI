@@ -24,7 +24,7 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
     private final EditNoteViewModel editNoteViewModel;
     private final OutNoteViewModel outNoteViewModel;
     private final ClearNoteViewModel clearNoteViewModel;
-    private String existingText = "example:";
+    private String existingText ;
     final JTextArea textArea = new JTextArea(existingText, 10, 30);
     private final JLabel filenameErrorField = new JLabel();
 
@@ -119,9 +119,15 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
         EditNoteState state = (EditNoteState) evt.getNewValue();
+        setNoteContent(state);
         if (state.getFilenameError() != null) {
             JOptionPane.showMessageDialog(this, state.getFilenameError());
         }
+    }
+
+    private void setNoteContent(EditNoteState state){
+        existingText = state.getCurrentNoteContent();
+        System.out.println(existingText);
     }
 
 }

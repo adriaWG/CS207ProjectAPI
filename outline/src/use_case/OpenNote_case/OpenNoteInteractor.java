@@ -3,6 +3,8 @@ package use_case.OpenNote_case;
 import entity.Note;
 import entity.NoteFactory;
 
+import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -35,7 +37,7 @@ public class OpenNoteInteractor implements OpenNoteInputBoundary {
             Note note = notefactory.create(openNoteInputData.getTitle(),path, null);
             noteDataAccessObject.saveNote(note);
 
-            OpenNoteOutputData openNoteOutputData = new OpenNoteOutputData(note.getNoteName(), note.getContent(), false);
+            OpenNoteOutputData openNoteOutputData = new OpenNoteOutputData(note.getNoteName(), note, false);
             openNotePresenter.prepareSuccessView(openNoteOutputData);
         }
     }
@@ -50,13 +52,26 @@ public class OpenNoteInteractor implements OpenNoteInputBoundary {
 
             String path = noteDataAccessObject.getPath(title);
             System.out.println(path);
-            Note note = notefactory.create(openNoteInputData.getTitle(),path, null);
+            System.out.println(readString(path));
+            Note note = notefactory.create(openNoteInputData.getTitle(),path, readString(path));
             noteDataAccessObject.saveNote(note);
 
-            OpenNoteOutputData openNoteOutputData = new OpenNoteOutputData(note.getNoteName(), note.getContent(), false);
+            OpenNoteOutputData openNoteOutputData = new OpenNoteOutputData(note.getNoteName(), note, false);
             openNotePresenter.prepareSuccessView(openNoteOutputData);
         }
 
+    }
+
+    public String readString(String filePath) {
+
+        String fileContent;
+        try {
+            fileContent = Files.readString(Paths.get(filePath));
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return fileContent;
     }
 
 }
