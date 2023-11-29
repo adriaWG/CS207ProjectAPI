@@ -127,6 +127,7 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
 
     private void setNoteContent(EditNoteState state){
         existingText = state.getCurrentNoteContent();
+        textArea.setText(existingText);
         System.out.println(existingText);
     }
 
