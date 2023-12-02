@@ -13,7 +13,6 @@ public class OneNoteAPIClient {
     // OneNote API endpoint and application credentials
     private static final String API_ENDPOINT = "https://graph.microsoft.com/v1.0/me/onenote/pages";
     private static final String CLIENT_ID = "a526481a-064e-477f-bc0d-54f88ef4c7b5";
-    private static final String CLIENT_SECRET = "GA78Q~_fkY2ST-BFg_Fut0cRAjeJOSiybN.0xaBu";
     private static final String REDIRECT_URI = "https://login.microsoftonline.com/common/oauth2/nativeclient";
     private static final String AUTHORIZATION_ENDPOINT = "https://login.microsoftonline.com/83ec03fd-2dce-4eb5-a0a8-3098bfe12b57/oauth2/v2.0/authorize";
     private static final String TOKEN_ENDPOINT = "https://login.microsoftonline.com/83ec03fd-2dce-4eb5-a0a8-3098bfe12b57/oauth2/v2.0/token";
