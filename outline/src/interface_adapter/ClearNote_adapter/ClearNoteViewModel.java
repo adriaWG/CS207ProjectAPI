@@ -26,13 +26,13 @@ public class ClearNoteViewModel extends ViewModel {
         support.firePropertyChange("state", null, this.state);
     }
 
-    @Override
     public void addPropertyChangeListener(PropertyChangeListener listener) {
         support.addPropertyChangeListener(listener);
     }
 
-    @Override
     public String getViewName() {
         return null;
     }
+
+    public void printSuccess() { JOptionPane.showMessageDialog(null, "File successfully cleared!");}
 }
