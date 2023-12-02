@@ -20,7 +20,7 @@ public class OneNoteAPIClient {
     private static final String SCOPE = "https://graph.microsoft.com/.default";
 
     // Function to obtain access token using Authorization Code Flow
-    private static String getAccessToken() throws IOException {
+    private static String getAccessTokenResponse() throws IOException {
         // Construct the authorization URL
         String authorizationUrl = AUTHORIZATION_ENDPOINT +
                 "?client_id=" + CLIENT_ID +
@@ -42,7 +42,7 @@ public class OneNoteAPIClient {
         HttpPost httpPost = new HttpPost(TOKEN_ENDPOINT);
         String requestBody = "grant_type=authorization_code" +
                 "&client_id=" + CLIENT_ID +
-                "&client_secret=" + CLIENT_SECRET +
+                //"&client_secret=" + CLIENT_SECRET +
                 "&redirect_uri=" + REDIRECT_URI +
                 "&code=" + authorizationCode;
         httpPost.setEntity(new StringEntity(requestBody, ContentType.APPLICATION_FORM_URLENCODED));
@@ -50,8 +50,8 @@ public class OneNoteAPIClient {
         try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
             HttpResponse response = httpClient.execute(httpPost);
 
-            System.out.println("Response Code: " + response.getStatusLine().getStatusCode());
-            System.out.println("Response Reason: " + response.getStatusLine().getReasonPhrase());
+            System.out.println("authorization_Response Code: " + response.getStatusLine().getStatusCode());
+            System.out.println("authorization_Response Reason: " + response.getStatusLine().getReasonPhrase());
 
             try (BufferedReader reader = new BufferedReader(new InputStreamReader(response.getEntity().getContent()))) {
                 StringBuilder result = new StringBuilder();
@@ -66,13 +66,15 @@ public class OneNoteAPIClient {
 
     // Use access token to create a note
     private static void createNote() throws IOException {
-        String accessToken = getAccessToken();
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("responsebody.txt"))) {
-            writer.write(accessToken);
-            System.out.println("Note data written to responsebody.txt");
+        String accessTokenResponse = getAccessTokenResponse();
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("accessTokenresponsebody.txt"))) {
+            writer.write(accessTokenResponse);
+            System.out.println("accessTokenresponse written to accessTokenresponsebody.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
+        String accessToken=AccessTokenExtractor.accessTokenExtractor(accessTokenResponse);
+
 
         // Build your note data here
         String noteData = "<html><head><title>Sample Page</title></head><body><p>Hello, OneNote!</p></body></html>";
@@ -85,6 +87,24 @@ public class OneNoteAPIClient {
 
         try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
             HttpResponse response = httpClient.execute(httpPost);
+
+            System.out.println("creatnote_Response Code: " + response.getStatusLine().getStatusCode());
+            System.out.println("creatnote_Response Reason: " + response.getStatusLine().getReasonPhrase());
+
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(response.getEntity().getContent()))) {
+                StringBuilder result = new StringBuilder();
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    result.append(line);
+                }
+                String resultString=result.toString();
+                try (BufferedWriter writer = new BufferedWriter(new FileWriter("createNoteresponsebody.txt"))) {
+                    writer.write(resultString);
+                    System.out.println("createNoteresponse written to createNoteresponsebody.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
 
             // Handle response
             if (response.getStatusLine().getStatusCode() == 201) {
