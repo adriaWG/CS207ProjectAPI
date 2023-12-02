@@ -64,7 +64,7 @@ public class OneNoteAPIClient {
     }
 
     // Use access token to create a note
-    private static void createNote() throws IOException {
+    private static void createNote(String title,String content) throws IOException {
         String accessTokenResponse = getAccessTokenResponse();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("accessTokenresponsebody.txt"))) {
             writer.write(accessTokenResponse);
@@ -76,7 +76,7 @@ public class OneNoteAPIClient {
 
 
         // Build your note data here
-        String noteData = "<html><head><title>Sample Page20231201</title></head><body><p>Hello, OneNote!AdriaWang</p></body></html>";
+        String noteData = "<html><head><title>"+title+"</title></head><body><p>"+content+"</p></body></html>";
 
         // Send request to create a note
         HttpPost httpPost = new HttpPost(API_ENDPOINT);
@@ -114,9 +114,14 @@ public class OneNoteAPIClient {
         }
     }
 
+    //This is the main method used to test the createNote function
+    //Can also call the createNote Method at the event of "New" button
+    //Personalized title and content
     public static void main(String[] args) {
         try {
-            createNote();
+            String title="SamplePage";
+            String content="2023CSC207";
+            createNote(title,content);
         } catch (IOException e) {
             e.printStackTrace();
         }
