@@ -4,9 +4,11 @@ import entity.Note;
 import entity.NoteFactory;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 
 public class OpenNoteInteractor implements OpenNoteInputBoundary {
     final OpenNoteUserDataAccessInterface noteDataAccessObject;
@@ -66,7 +68,9 @@ public class OpenNoteInteractor implements OpenNoteInputBoundary {
 
         String fileContent;
         try {
-            fileContent = Files.readString(Paths.get(filePath));
+            //fileContent = Files.readString(Paths.get(filePath));
+            List<String> lines = Files.readAllLines(Paths.get(filePath),StandardCharsets.UTF_8);
+            fileContent = String.join(System.lineSeparator(), lines);
 
         } catch (IOException e) {
             throw new RuntimeException(e);
