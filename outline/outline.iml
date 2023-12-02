@@ -30,7 +30,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="eclipse.ecf.apache.httpcomponents.httpclient" level="project" />
+    <orderEntry type="library" name="eclipse.ecf.apache.commons.logging" level="project" />
     <orderEntry type="library" name="eclipse.ecf.apache.httpcomponents.httpcore" level="project" />
   </component>
 </module>

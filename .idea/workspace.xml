@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="updates on test (clear not working yet)">
+    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="small change on ClearNoteViewModel">
       <change afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/eclipse_ecf_apache_httpcomponents_httpclient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/eclipse_ecf_apache_commons_logging.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/src/interface_adapter/ClearNote_adapter/ClearNoteViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/src/interface_adapter/ClearNote_adapter/ClearNoteViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/outline.iml" beforeDir="false" afterPath="$PROJECT_DIR$/outline/outline.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/test/OpenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/OpenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/test/app/EditNoteUseCaseFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/app/EditNoteUseCaseFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/test/app/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/app/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/test/app/OpenNoteUseCaseFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/app/OpenNoteUseCaseFactoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +93,7 @@
       <recent name="use_case.ClearNote_case" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.OpenTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="outline" />
@@ -121,6 +126,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OpenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="outline" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OpenTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OpenTest.testOpenView" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="outline" />
       <option name="PACKAGE_NAME" value="" />
@@ -133,6 +147,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OpenTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ClearTest.testClearNote" />
         <item itemvalue="JUnit.ClearTest" />
@@ -156,7 +171,7 @@
       <workItem from="1699509181081" duration="1741000" />
       <workItem from="1700510627982" duration="1727000" />
       <workItem from="1700691326679" duration="21138000" />
-      <workItem from="1701315849909" duration="4292000" />
+      <workItem from="1701315849909" duration="15385000" />
     </task>
     <task id="LOCAL-00001" summary="add folders">
       <option name="closed" value="true" />
@@ -310,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701101482915</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="small change on ClearNoteViewModel">
+      <option name="closed" value="true" />
+      <created>1701490588683</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1701490588683</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +370,8 @@
     <MESSAGE value="updated test" />
     <MESSAGE value="ui for EditTest" />
     <MESSAGE value="updates on test (clear not working yet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates on test (clear not working yet)" />
+    <MESSAGE value="small change on ClearNoteViewModel" />
+    <option name="LAST_COMMIT_MESSAGE" value="small change on ClearNoteViewModel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
