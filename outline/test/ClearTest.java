@@ -1,9 +1,12 @@
+import static java.lang.Thread.sleep;
 import static org.junit.Assert.*;
 
 import app.Main;
 import data_access.FileUserDataAccessObject;
 import entity.CommonNoteFactory;
+import entity.Note;
 import entity.NoteFactory;
+import org.junit.Test;
 import use_case.ClearNote_case.ClearNoteInputBoundary;
 import interface_adapter.ClearNote_adapter.ClearNoteViewModel;
 import interface_adapter.ClearNote_adapter.ClearNoteController;
@@ -24,6 +27,21 @@ public class ClearTest {
         }
         fileUserDataAccessObject.saveNote(noteFactory.create("note1", "./users.csv/note1", ""));
     }
+
+    @Test
+    public void testClear() {
+        addNote();
+        NoteFactory noteFactory = new CommonNoteFactory();
+        Note note = noteFactory.fetchText("note1", "./users.csv");
+
+        // TODO note.clear();
+        assertEquals(note.getContent(), "");
+        assert(note.getContent().isEmpty());
+
+    }
+
+
+
 
     @org.junit.Test
     public void testClearNote(){

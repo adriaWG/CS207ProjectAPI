@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class AccessTokenExtractor {
 
-    public String accessTokenExtractor(String jsonString) {
+    public static String accessTokenExtractor(String jsonString) {
 
         try {
             // 读取JSON字符串

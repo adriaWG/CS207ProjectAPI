@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="ui for EditTest">
-      <change afterPath="$PROJECT_DIR$/outline/users.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="edit tests">
+      <change afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outline/test/ClearTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/ClearTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/test/OpenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/OpenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/test/EditTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/EditTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +55,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "true",
     "Repository.Attach.JavaDocs": "true",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "1.8",
@@ -89,7 +87,7 @@
       <recent name="use_case.ClearNote_case" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ClearTest.testClearNote">
+  <component name="RunManager" selected="JUnit.EditTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="outline" />
@@ -99,15 +97,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClearTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="outline" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ClearTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,11 +111,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OpenTest.testOpenView" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EditTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="outline" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EditTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="outline" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="OpenTest" />
-      <option name="METHOD_NAME" value="testOpenView" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpenTest.testNameAlreadyExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="outline" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OpenTest" />
+      <option name="METHOD_NAME" value="testNameAlreadyExists" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,10 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ClearTest.testClearNote" />
-        <item itemvalue="JUnit.ClearTest" />
+        <item itemvalue="JUnit.EditTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.OpenTest.testOpenView" />
+        <item itemvalue="JUnit.OpenTest" />
+        <item itemvalue="JUnit.OpenTest.testNameAlreadyExists" />
+        <item itemvalue="JUnit.ClearTest.testClearNote" />
       </list>
     </recent_temporary>
   </component>
@@ -157,6 +165,9 @@
       <workItem from="1699509181081" duration="1741000" />
       <workItem from="1700510627982" duration="1727000" />
       <workItem from="1700691326679" duration="21138000" />
+      <workItem from="1701315849909" duration="16785000" />
+      <workItem from="1701559156886" duration="6000" />
+      <workItem from="1701559171084" duration="5508000" />
     </task>
     <task id="LOCAL-00001" summary="add folders">
       <option name="closed" value="true" />
@@ -302,7 +313,47 @@
       <option name="project" value="LOCAL" />
       <updated>1701098543639</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="updates on test (clear not working yet)">
+      <option name="closed" value="true" />
+      <created>1701101482915</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1701101482915</updated>
+    </task>
+    <task id="LOCAL-00020" summary="small change on ClearNoteViewModel">
+      <option name="closed" value="true" />
+      <created>1701490588683</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1701490588683</updated>
+    </task>
+    <task id="LOCAL-00021" summary="added some OpenNote test cases (not complete)">
+      <option name="closed" value="true" />
+      <created>1701557696371</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1701557696371</updated>
+    </task>
+    <task id="LOCAL-00022" summary="edit tests">
+      <option name="closed" value="true" />
+      <created>1701569201656</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1701569201656</updated>
+    </task>
+    <task id="LOCAL-00023" summary="edit tests">
+      <option name="closed" value="true" />
+      <created>1701569224756</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1701569224756</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +389,11 @@
     <MESSAGE value="updated README.md" />
     <MESSAGE value="updated test" />
     <MESSAGE value="ui for EditTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="ui for EditTest" />
+    <MESSAGE value="updates on test (clear not working yet)" />
+    <MESSAGE value="small change on ClearNoteViewModel" />
+    <MESSAGE value="added some OpenNote test cases (not complete)" />
+    <MESSAGE value="edit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -347,6 +402,11 @@
           <url>file://$PROJECT_DIR$/noteapi/src/main/java/graphapi.java</url>
           <line>44</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/outline/test/OpenTest.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
