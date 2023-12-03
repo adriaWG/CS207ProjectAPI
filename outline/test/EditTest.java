@@ -51,11 +51,21 @@ public class EditTest {
         Main.main(new String[]{});
     }
 
-    @Test
-    public void testEditContent() throws IOException {
+    public void addNote() {
         NoteFactory noteFactory = new CommonNoteFactory();
-        FileUserDataAccessObject fileUserDataAccessObject = new FileUserDataAccessObject("./users.csv", noteFactory);
-        noteFactory.create("note1", "./users.csv", "new");
+        FileUserDataAccessObject fileUserDataAccessObject;
+        try {
+            fileUserDataAccessObject = new FileUserDataAccessObject("./users.csv", noteFactory);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        fileUserDataAccessObject.saveNote(noteFactory.create("note1", "./users.csv/note1", ""));
+    }
+
+    @Test
+    public void testEditContent() {
+        NoteFactory noteFactory = new CommonNoteFactory();
+        addNote();
 
         // test content prior to any changes
         assertEquals(noteFactory.fetchText("note1", "./users.csv").getContent(), "");
