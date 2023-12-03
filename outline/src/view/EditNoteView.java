@@ -5,6 +5,7 @@ import interface_adapter.EditNote_adapter.EditNoteViewModel;
 
 import interface_adapter.EditNote_adapter.EditNoteState;
 import interface_adapter.OutNote_adapter.OutNoteController;
+import interface_adapter.OutNote_adapter.OutNoteState;
 import interface_adapter.OutNote_adapter.OutNoteViewModel;
 import use_case.ClearNote_case.ClearNoteInputBoundary;
 import interface_adapter.ClearNote_adapter.ClearNoteController;
@@ -98,8 +99,12 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
                 new ActionListener() {
                     public void actionPerformed(ActionEvent evt) {
                         if (evt.getSource().equals(export)) {
-                            EditNoteState currentState = editNoteViewModel.getState();
-                            editNoteController.editNote(currentState.getFilename(),currentState.getCurrentNote(),textArea.getText());
+                            OutNoteState currentState = new OutNoteState();
+                            EditNoteState currentState1 = editNoteViewModel.getState();
+                            currentState.setCurrentNote(currentState1.getCurrentNote());
+                            currentState.setFilename(currentState1.getFilename());
+                            outNoteController.execute(currentState.getFilename());
+                            editNoteViewModel.printSuccessExport(currentState);
                         }
                     }
                 }
