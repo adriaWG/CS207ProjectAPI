@@ -1,6 +1,7 @@
 package use_case.EditNote_case;
 
 import entity.Note;
+import interface_adapter.EditNote_adapter.EditNoteController;
 import interface_adapter.EditNote_adapter.EditNoteViewModel;
 import interface_adapter.ViewManagerModel;
 
@@ -25,4 +26,5 @@ public class EditNoteInteractor implements EditNoteInputBoundary {
         EditNoteOutputData editNoteOutputData = new EditNoteOutputData(note.getNoteName(), false);
         editNotePresenter.prepareSuccessView(editNoteOutputData);
     }
+
 }
