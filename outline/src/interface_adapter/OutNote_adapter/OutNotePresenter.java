@@ -22,7 +22,6 @@ public class OutNotePresenter implements OutNoteOutputBoundary {
     public void prepareSuccessView(OutNoteOutputData response) {
         OutNoteState outNoteState = outNoteViewModel.getState();
         outNoteState.setFilename(response.getFilename());
-        outNoteState.setFilepath(response.getFilepath());
         this.outNoteViewModel.setState(outNoteState);
         this.outNoteViewModel.firePropertyChanged();
 

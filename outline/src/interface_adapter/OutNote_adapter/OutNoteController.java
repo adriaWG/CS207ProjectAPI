@@ -10,8 +10,8 @@ public class OutNoteController {
     }
 
 
-    public void execute(String filename,String filepath) {
-        OutNoteInputData outNoteInputData = new OutNoteInputData(filename,filepath);
+    public void execute(String filename) {
+        OutNoteInputData outNoteInputData = new OutNoteInputData(filename,null);
         outNoteUseCaseInteractor.outputfile(outNoteInputData);
     }
 }
