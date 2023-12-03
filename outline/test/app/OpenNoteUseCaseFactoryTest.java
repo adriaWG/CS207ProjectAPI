@@ -8,5 +8,6 @@ public class OpenNoteUseCaseFactoryTest {
 
     @Test
     public void create() {
+
     }
 }
