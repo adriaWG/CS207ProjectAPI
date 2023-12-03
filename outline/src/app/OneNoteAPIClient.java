@@ -1,4 +1,4 @@
-package entity;
+package app;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ContentType;
@@ -34,7 +34,7 @@ public class OneNoteAPIClient {
         System.out.print("Enter the url after login to extract the AuthorizationCode: ");
         Scanner scanner = new Scanner(System.in);
         String url = scanner.nextLine();
-        String authorizationCode=AuthorizationCodeExtractor.extract(url);
+        String authorizationCode= AuthorizationCodeExtractor.extract(url);
         System.out.println("AuthorizationCode:"+authorizationCode);
 
         // Exchange authorization code for an access token
@@ -72,7 +72,7 @@ public class OneNoteAPIClient {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        String accessToken=AccessTokenExtractor.accessTokenExtractor(accessTokenResponse);
+        String accessToken= AccessTokenExtractor.accessTokenExtractor(accessTokenResponse);
 
 
         // Build your note data here
