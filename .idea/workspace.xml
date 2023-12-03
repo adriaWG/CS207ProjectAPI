@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="added some OpenNote test cases (not complete)">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/fasterxml_jackson_core.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-annotations-2.13.3-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-annotations-2.13.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-annotations-2.14.2-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-annotations-2.14.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-core-2.14.2-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-core-2.14.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-databind-2.14.2-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-databind-2.14.2.jar" afterDir="false" />
+    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="edit tests">
       <change afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/outline.iml" beforeDir="false" afterPath="$PROJECT_DIR$/outline/outline.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/test/ClearTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/ClearTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outline/test/EditTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/EditTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/test/app/OpenNoteUseCaseFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/app/OpenNoteUseCaseFactoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,33 +52,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/emilytieu/IdeaProjects/CS207ProjectAPI/outline/test&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;E:/Codes/software design/Project/noteapi/src/main/java/graphapi.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/emilytieu/IdeaProjects/CS207ProjectAPI/outline/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "E:/Codes/software design/Project/noteapi/src/main/java/graphapi.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/outline/test" />
@@ -99,7 +87,7 @@
       <recent name="use_case.ClearNote_case" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.EditTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="outline" />
@@ -113,21 +101,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClearTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="outline" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ClearTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ClearTest.testClearNote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="outline" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ClearTest" />
       <option name="METHOD_NAME" value="testClearNote" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EditTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="outline" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EditTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EditTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.OpenTest" />
         <item itemvalue="JUnit.OpenTest.testNameAlreadyExists" />
         <item itemvalue="JUnit.ClearTest.testClearNote" />
-        <item itemvalue="JUnit.ClearTest" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +167,7 @@
       <workItem from="1700691326679" duration="21138000" />
       <workItem from="1701315849909" duration="16785000" />
       <workItem from="1701559156886" duration="6000" />
-      <workItem from="1701559171084" duration="4889000" />
+      <workItem from="1701559171084" duration="5508000" />
     </task>
     <task id="LOCAL-00001" summary="add folders">
       <option name="closed" value="true" />
@@ -349,7 +337,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701557696371</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="edit tests">
+      <option name="closed" value="true" />
+      <created>1701569201656</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1701569201656</updated>
+    </task>
+    <task id="LOCAL-00023" summary="edit tests">
+      <option name="closed" value="true" />
+      <created>1701569224756</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1701569224756</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +392,8 @@
     <MESSAGE value="updates on test (clear not working yet)" />
     <MESSAGE value="small change on ClearNoteViewModel" />
     <MESSAGE value="added some OpenNote test cases (not complete)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some OpenNote test cases (not complete)" />
+    <MESSAGE value="edit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
