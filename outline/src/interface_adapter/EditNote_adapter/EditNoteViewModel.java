@@ -42,4 +42,7 @@ public class EditNoteViewModel extends ViewModel {
     public void printSuccess(){
         JOptionPane.showMessageDialog(null, "File successfully saved!");
     }
+    public void printSuccessDelete(String filename){
+        JOptionPane.showMessageDialog(null, "File "+filename+" successfully Deleted!");
+    }
 }

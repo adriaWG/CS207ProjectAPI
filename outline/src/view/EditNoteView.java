@@ -29,7 +29,7 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
     private final JLabel filenameErrorField = new JLabel();
 
     private final JButton edit;
-    private final JButton cancel;
+
     private final JButton clear;
     private final JButton export;
     private final EditNoteController editNoteController;
@@ -38,15 +38,16 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
 
 
     public EditNoteView(EditNoteViewModel editNoteViewModel, EditNoteController editController,
-                        OutNoteController outNoteController,OutNoteViewModel outNoteViewModel,
-                        ClearNoteController clearNoteController, ClearNoteViewModel clearNoteViewModel) {
+                        OutNoteController outController,OutNoteViewModel outNoteViewModel,
+                        ClearNoteController clearController, ClearNoteViewModel clearNoteViewModel) {
 
         this.editNoteController = editController;
         this.editNoteViewModel = editNoteViewModel;
 
-        this.outNoteController = outNoteController;
+        this.outNoteController = outController;
         this.outNoteViewModel = outNoteViewModel;
-        this.clearNoteController=clearNoteController;
+
+        this.clearNoteController=clearController;
         this.clearNoteViewModel=clearNoteViewModel;
 
 
@@ -60,8 +61,7 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
         JPanel buttons = new JPanel();
         edit = new JButton(editNoteViewModel.SAVE_BUTTON_LABEL);
         buttons.add(edit);
-        cancel = new JButton(editNoteViewModel.CANCEL_BUTTON_LABEL);
-        buttons.add(cancel);
+
         clear = new JButton(clearNoteViewModel.CLEAR_BUTTON_LABEL);
         buttons.add(clear);
         export = new JButton(outNoteViewModel.EXPORT_BUTTON_LABEL);
@@ -78,15 +78,17 @@ public class EditNoteView extends JPanel implements ActionListener, PropertyChan
                     }
                 }
         );
-        
-        cancel.addActionListener(this);
+
 
         clear.addActionListener(
                 new ActionListener() {
                     public void actionPerformed(ActionEvent evt) {
                         if (evt.getSource().equals(clear)) {
-                            EditNoteState currentState = editNoteViewModel.getState();
-                            editNoteController.editNote(currentState.getFilename(),currentState.getCurrentNote(),textArea.getText());
+                            ClearNoteState currentState = new ClearNoteState();
+                            EditNoteState currentState1 = editNoteViewModel.getState();
+                            currentState.setFilename(currentState1.getFilename());
+                            clearNoteController.execute(currentState.getFilename());
+                            editNoteViewModel.printSuccessDelete(currentState.getFilename());
                         }
                     }
                 }
