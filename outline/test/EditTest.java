@@ -7,6 +7,7 @@ import entity.Note;
 import entity.NoteFactory;
 import interface_adapter.ClearNote_adapter.ClearNoteController;
 import interface_adapter.ClearNote_adapter.ClearNoteViewModel;
+import interface_adapter.EditNote_adapter.EditNotePresenter;
 import interface_adapter.OutNote_adapter.OutNoteController;
 import interface_adapter.OutNote_adapter.OutNoteViewModel;
 import org.junit.Test;
@@ -97,6 +98,9 @@ public class EditTest {
         editNoteInteractor.edit(editNoteInputData);
         EditNoteOutputData editNoteOutputData = null;
         editNoteOutputData.getFilename();
+        EditNotePresenter editNotePresenter = null;
+        editNotePresenter.prepareSuccessView(editNoteOutputData);
+
 
 
     }

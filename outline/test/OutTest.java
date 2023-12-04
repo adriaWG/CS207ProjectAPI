@@ -11,6 +11,7 @@ import use_case.EditNote_case.EditNoteInputBoundary;
 import use_case.OutNote_case.OutNoteInputBoundary;
 import interface_adapter.OutNote_adapter.OutNoteController;
 import interface_adapter.OutNote_adapter.OutNoteViewModel;
+import use_case.OutNote_case.OutNoteOutputData;
 import view.EditNoteView;
 
 import javax.swing.*;
@@ -44,6 +45,13 @@ public class OutTest {
 
     @Test
     public void testClearContent(){
+        OutNoteInputBoundary outNoteInputBoundary = null;
+        OutNoteController outNoteController = new OutNoteController(outNoteInputBoundary);
+        outNoteController.execute("note1");
+        OutNoteOutputData outNoteOutputData = new OutNoteOutputData("note1", "./users.csv", false);
+        assertEquals(outNoteOutputData.getFilename(), "note1");
+        assertEquals(outNoteOutputData.getFilepath(), "./users.csv");
+
 
 
     }
