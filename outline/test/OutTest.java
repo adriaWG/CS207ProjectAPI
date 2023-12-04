@@ -45,5 +45,6 @@ public class OutTest {
     @Test
     public void testClearContent(){
 
+
     }
 }

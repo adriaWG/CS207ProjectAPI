@@ -11,7 +11,7 @@ import interface_adapter.OutNote_adapter.OutNoteController;
 import interface_adapter.OutNote_adapter.OutNoteViewModel;
 import org.junit.Test;
 import use_case.ClearNote_case.ClearNoteInputBoundary;
-import use_case.EditNote_case.EditNoteInputBoundary;
+import use_case.EditNote_case.*;
 import interface_adapter.EditNote_adapter.EditNoteController;
 import interface_adapter.EditNote_adapter.EditNoteViewModel;
 import use_case.OutNote_case.OutNoteInputBoundary;
@@ -77,6 +77,26 @@ public class EditTest {
         // test content after changes
         assertNotEquals(noteFactory.fetchText("note1", "./users.csv").getContent(), "");
         assertEquals(noteFactory.fetchText("note1", "./users.csv").getContent(), "additional text");
+
+
+    }
+
+    @Test
+    public void testUseCase() {
+        NoteFactory noteFactory = new CommonNoteFactory();
+        Note note = noteFactory.fetchText("note1", "./users.csv");
+        EditNoteInputBoundary editNoteInputBoundary = null;
+        EditNoteController editNoteController = new EditNoteController(editNoteInputBoundary);
+
+        editNoteController.editNote("note1", note, "new text");
+        assertEquals(note.getContent(), "new text");
+        EditNoteUserDataAccessInterface editNoteUserDataAccessInterface = null;
+        EditNoteInputData editNoteInputData = new EditNoteInputData("note1", note, "new text");
+        EditNoteOutputBoundary editNoteOutputBoundary = null;
+        EditNoteInteractor editNoteInteractor = new EditNoteInteractor(editNoteUserDataAccessInterface, editNoteOutputBoundary);
+        editNoteInteractor.edit(editNoteInputData);
+        EditNoteOutputData editNoteOutputData = null;
+        editNoteOutputData.getFilename();
 
 
     }
