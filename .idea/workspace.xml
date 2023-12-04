@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="added more tests">
+    <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="coverage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/test/ClearTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/ClearTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/test/EditTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/EditTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/test/OutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/OutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/test/OpenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/OpenTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +167,7 @@
       <workItem from="1701559156886" duration="6000" />
       <workItem from="1701559171084" duration="5508000" />
       <workItem from="1701632727540" duration="3583000" />
-      <workItem from="1701660293889" duration="2865000" />
+      <workItem from="1701660293889" duration="4300000" />
     </task>
     <task id="LOCAL-00001" summary="add folders">
       <option name="closed" value="true" />
@@ -363,7 +361,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701662809935</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="coverage">
+      <option name="closed" value="true" />
+      <created>1701664155786</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1701664155786</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +410,8 @@
     <MESSAGE value="added some OpenNote test cases (not complete)" />
     <MESSAGE value="edit tests" />
     <MESSAGE value="added more tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more tests" />
+    <MESSAGE value="coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="coverage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -416,7 +423,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/outline/test/OpenTest.java</url>
-          <line>60</line>
+          <line>61</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -428,6 +435,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CS207ProjectAPI1$ClearTest.ic" NAME="ClearTest Coverage Results" MODIFIED="1701662429047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/CS207ProjectAPI1$All_in_outline.ic" NAME="All in outline Coverage Results" MODIFIED="1701663045497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CS207ProjectAPI1$All_in_outline.ic" NAME="All in outline Coverage Results" MODIFIED="1701664460801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
