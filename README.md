@@ -89,10 +89,7 @@ Our implementation adheres to SOLID principles
 ### Clean Architecture
 Our implementation adheres to CLean Architecture
 ### Design Patterns
-
-## Demo
-Insert screenshots of our completed code 
-Insert video demo of completed code
+A variety of design patterns are used. Examples include observer and factory design patterns.
 
 ## Testing
 Our test folder shows our testings to specific parts of the project.
@@ -103,14 +100,12 @@ With time permitting, here are some of the features we want to implement:
 Users will be able to insert images, change sizes, and create visually appealing notes with a variety of options.
 #### 2. Import Function
 Users can import notes from other sources.
-#### 3. Text Entry
-Other than handwriting-notes, users can choose to type and edit text within the application by using a keyboard.
+#### 3. Support for handwritten notes
+Other than typed notes, users can choose to handwrite their notes.
 #### 4. Support for Multiple Languages
 This feature will allow the note-taking application to be accessible to a diverse user base.
 #### 5. Spell Checking
 This feature will perform real-time spell checks as users write their notes. This will help users to identify errors, enhancing the quality of their notes.
-#### 6. Save and Load
-Users will be able to save their notes at anytime and can load their previous work when they wish to continue where they left off, enabling features like real-time data retrieval.
 
 
 ## Remarks
