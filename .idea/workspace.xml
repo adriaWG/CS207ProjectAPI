@@ -5,9 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e26ea3e-5754-4816-bc9d-3f953f3e2f29" name="Changes" comment="edit tests">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/fasterxml_jackson_core_databind.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hi.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jackson-core-2.13.3-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jackson-core-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jackson-databind-2.13.3-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jackson-databind-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/org.apache.httpcomponents.httpclient-4.5.2.v20170210-0925-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/org.apache.httpcomponents.httpclient-4.5.2.v20170210-0925-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/org.apache.httpcomponents.httpclient-4.5.2.v20170210-0925.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/org.apache.httpcomponents.httpcore-4.4.6.v20170210-0925-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/org.apache.httpcomponents.httpcore-4.4.6.v20170210-0925-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/org.apache.httpcomponents.httpcore-4.4.6.v20170210-0925.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outline/test/ClearTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/ClearTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outline/test/EditTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/EditTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/test/OpenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/OpenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outline/test/data_access/FileUserDataAccessObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/outline/test/data_access/FileUserDataAccessObjectTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,32 +67,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/emilytieu/IdeaProjects/CS207ProjectAPI/outline/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "E:/Codes/software design/Project/noteapi/src/main/java/graphapi.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/emilytieu/IdeaProjects/CS207ProjectAPI/outline/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;E:/Codes/software design/Project/noteapi/src/main/java/graphapi.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/outline/test" />
@@ -87,7 +103,7 @@
       <recent name="use_case.ClearNote_case" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EditTest">
+  <component name="RunManager" selected="JUnit.ClearTest.testClear">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="outline" />
@@ -101,11 +117,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClearTest.testClearNote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClearTest.testClear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="outline" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ClearTest" />
-      <option name="METHOD_NAME" value="testClearNote" />
+      <option name="METHOD_NAME" value="testClear" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClearTest.testClear" />
         <item itemvalue="JUnit.EditTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.OpenTest" />
         <item itemvalue="JUnit.OpenTest.testNameAlreadyExists" />
-        <item itemvalue="JUnit.ClearTest.testClearNote" />
       </list>
     </recent_temporary>
   </component>
@@ -168,6 +184,8 @@
       <workItem from="1701315849909" duration="16785000" />
       <workItem from="1701559156886" duration="6000" />
       <workItem from="1701559171084" duration="5508000" />
+      <workItem from="1701632727540" duration="3583000" />
+      <workItem from="1701660293889" duration="1700000" />
     </task>
     <task id="LOCAL-00001" summary="add folders">
       <option name="closed" value="true" />
@@ -414,5 +432,8 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CS207ProjectAPI1$ClearTest.ic" NAME="ClearTest Coverage Results" MODIFIED="1701662429047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

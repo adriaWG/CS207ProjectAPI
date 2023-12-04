@@ -6,10 +6,15 @@ import data_access.FileUserDataAccessObject;
 import entity.CommonNoteFactory;
 import entity.Note;
 import entity.NoteFactory;
+import interface_adapter.ClearNote_adapter.ClearNotePresenter;
+import interface_adapter.ClearNote_adapter.ClearNoteState;
 import org.junit.Test;
 import use_case.ClearNote_case.ClearNoteInputBoundary;
 import interface_adapter.ClearNote_adapter.ClearNoteViewModel;
 import interface_adapter.ClearNote_adapter.ClearNoteController;
+import use_case.ClearNote_case.ClearNoteInteractor;
+import use_case.ClearNote_case.ClearNoteOutputBoundary;
+import use_case.ClearNote_case.ClearNoteUserDataAccessInterface;
 
 import javax.swing.*;
 import java.io.IOException;
@@ -37,6 +42,13 @@ public class ClearTest {
         // TODO note.clear();
         assertEquals(note.getContent(), "");
         assert(note.getContent().isEmpty());
+
+        ClearNoteInputBoundary clearNoteInputBoundary = null;
+        ClearNoteInteractor clearNoteInteractor = null;
+        ClearNoteController clearNoteController = new ClearNoteController(clearNoteInputBoundary);
+        clearNoteController.execute("note1");
+
+
 
     }
 
