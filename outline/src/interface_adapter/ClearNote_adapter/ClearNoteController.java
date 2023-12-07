@@ -12,7 +12,7 @@ public class ClearNoteController {
     public ClearNoteController(ClearNoteInputBoundary clearUseCaseInteractor) {
         this.clearUseCaseInteractor = clearUseCaseInteractor;
     }
-
+// execute calls method in clearUseCaseInteractor by this method
     public void execute(String filename) {
         ClearNoteInputData clearNoteInputData = new ClearNoteInputData(filename);
         String noteName = clearNoteInputData.getFilename();

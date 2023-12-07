@@ -2,7 +2,7 @@ package interface_adapter.ClearNote_adapter;
 
 import entity.Note;
 import interface_adapter.EditNote_adapter.EditNoteState;
-
+//it's similar to other note states
 public class ClearNoteState {
     private String filename = "";
     private String filenameError = null;

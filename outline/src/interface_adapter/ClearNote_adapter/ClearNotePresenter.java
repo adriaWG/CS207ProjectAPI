@@ -4,7 +4,7 @@ import interface_adapter.ViewManagerModel;
 import use_case.ClearNote_case.ClearNoteOutputBoundary;
 import use_case.ClearNote_case.ClearNoteOutputData;
 import use_case.EditNote_case.EditNoteOutputData;
-
+//implement prepare success/fail view for ClearNoteOutputBoundary
 public class ClearNotePresenter implements ClearNoteOutputBoundary {
     private final ClearNoteViewModel clearNoteViewModel;
     private ViewManagerModel viewManagerModel;

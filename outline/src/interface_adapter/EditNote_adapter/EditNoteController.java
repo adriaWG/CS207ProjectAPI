@@ -9,7 +9,7 @@ public class EditNoteController {
     public EditNoteController(EditNoteInputBoundary editUseCaseInteractor) {
         this.editUseCaseInteractor = editUseCaseInteractor;
     }
-
+    // editNote calls method edit in editUseCaseInteractor by this method
     public void editNote(String filename, Note note, String screenText) {
         EditNoteInputData editNoteInputData = new EditNoteInputData(filename,note,screenText);
 
