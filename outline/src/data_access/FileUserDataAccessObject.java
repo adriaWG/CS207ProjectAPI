@@ -9,7 +9,9 @@ import use_case.OutNote_case.OutNoteUserDataAccessInterface;
 
 import java.io.*;
 import java.util.*;
-
+// Our fileUserDataAccessObject uses a csv file to contain our filenames and filepaths,
+// In this way, we can read file contents using FileUserDataAccessObject by building readContent functions in it.
+// Our other codes don't have to know how we read content from filepath.
 public class FileUserDataAccessObject implements OpenNoteUserDataAccessInterface, EditNoteUserDataAccessInterface,
         ClearNoteUserDataAccessInterface, OutNoteUserDataAccessInterface {
 
