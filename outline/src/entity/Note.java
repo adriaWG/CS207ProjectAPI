@@ -1,7 +1,6 @@
 package entity;
 
-import java.time.LocalDateTime;
-
+//gives an interface that concludes our entity's functions
 public interface Note {
     //current note is just the simplest version of txt file
     String getContent();

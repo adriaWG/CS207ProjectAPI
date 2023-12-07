@@ -1,5 +1,5 @@
 package entity;
-
+//implements note interface
 public class CommonNote implements Note {
     private final String noteName;
     private String content;

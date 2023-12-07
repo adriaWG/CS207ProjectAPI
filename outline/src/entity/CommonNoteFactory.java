@@ -3,7 +3,7 @@ package entity;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-
+// realizes our entity's building functions
 public class CommonNoteFactory implements NoteFactory{
 
 
