@@ -43,8 +43,8 @@ public class OpenNoteInteractor implements OpenNoteInputBoundary {
             openNotePresenter.prepareSuccessView(openNoteOutputData);
         }
     }
-
-    @Override //some kind of execute that deal with outNote InputData
+    //basic thing here is [using methods that is already defined] with inputdata
+    @Override
     public void openNote(OpenNoteInputData openNoteInputData) {
         String title = openNoteInputData.getTitle();
         if (!noteDataAccessObject.existsByName(openNoteInputData.getTitle())) {
