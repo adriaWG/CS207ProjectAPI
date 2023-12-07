@@ -27,7 +27,7 @@ import view.EditNoteView;
 
 import javax.swing.*;
 import java.io.IOException;
-
+//class that helps create  EditNoteView
 public class EditNoteUseCaseFactory {
 
     /** Prevent instantiation. */

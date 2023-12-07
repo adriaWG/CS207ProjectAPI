@@ -19,7 +19,7 @@ import javax.swing.*;
 import java.io.IOException;
 
 import static app.EditNoteUseCaseFactory.createEditNoteUseCase;
-
+//class that helps create  OpenNoteView
 public class OpenNoteUseCaseFactory {
     /** Prevent instantiation. */
     private OpenNoteUseCaseFactory() {}
